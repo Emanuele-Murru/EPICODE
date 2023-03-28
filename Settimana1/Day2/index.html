@@ -13,73 +13,108 @@
         <header>
             <img src="./assets/images/EPICODE-pitto-color.png" alt="logoEpicode">
 
-                <p> Epicode - Il blog dei developers</p>
+            <p> Epicode - Il blog dei developers</p>
 
             <!--inizio menu-->
-                <ul>
-                    <li> <a href=""> Home </a> </li>
-                    <li> <a href=""> Articoli </a> </li>
-                    <li> <a href=""> Job </a> </li>
-                </ul>
+            <ul>
+                <li> <a href=""> Home </a> </li>
+                <li> <a href=""> Articoli </a> </li>
+                <li> <a href=""> Job </a> </li>
+            </ul>
             <!--fine menu-->
         </header>
 
         <hr>
 
         <main>
-            <div id="titoloPost">
-            <h2> Come creare un template per i post</h2>
-            <p> di Mario Rossi - pubblicato il 25-10-2020</p>
-        </div>
+            <div class="post">
+                <h2> Come creare un template per i post</h2>
+                <p> di Mario Rossi - pubblicato il 25-10-2020</p>
 
-        <div id="contenutoDelPost">
-            <p> La prima cosa da fare è suddividere in blocchi logic la pagina, identificando le <strong> parti comuni </strong> da identificare a tutte le pagine</p>
-            <br>
-            <p> Le varie aree saranno quindi suddivise in: </p>
+                <p> La prima cosa da fare è suddividere in blocchi logic la pagina, identificando le <strong> parti
+                        comuni </strong> da identificare a tutte le pagine</p>
 
-            <ul> 
-                <li>Contenuti di intestazione del tag &lt header &gt </li>
-                <li>Contenuti centrali variabili del tag &lt main &gt (corpo principale) </li>
-                <li>Contenuti di fine pagina comuni, da inserire nel tag &lt footer &gt </li>
-            </ul>
-        </div>
+                <p> Le varie aree saranno quindi suddivise in: </p>
 
-            <table>
-                <caption> Diffusione del CSS</caption>
-                <thead>
+                <ul>
+                    <li>Contenuti di intestazione del tag &lt header &gt </li>
+                    <li>Contenuti centrali variabili del tag &lt main &gt (corpo principale) </li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag &lt footer &gt </li>
+                </ul>
+
+                <h2> Formattazione del codice</h2>
+                <p> Il testo del'articolo dovrà essere formattato per identificare tutte le parti da <strong>
+                        selezionare con i CSS </strong>. Perciò i passi saranno:</p>
+
+                <ol>
+                    <li> Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato
+                    </li>
+                    <li> Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso </li>
+                    <li> Applicare gli stili CSS </li>
+                </ol>
+            </div>
+
+            <div class="tabella">
+                <p> L'applicazione di stili CSS è cresciut negli anni fino a raggiungere la diffusione pressochè totale.
+                </p>
+                <table>
+                    <caption> Diffusione del CSS</caption>
+                    <thead>
+                        <tr>
+                            <th> Anno </th>
+                            <th> % di utilizzo </th>
+                            <th> Supporto browsers</th>
+                        </tr>
+                    </thead>
                     <tr>
-                        <th> Anno </th>
-                        <th> % di utilizzo </th>
-                        <th> Supporto browsers</th>
+                        <td> 2000</td>
+                        <td> 20% </td>
+                        <td> 17% </td>
                     </tr>
-                </thead>
-                <tr>
-                    <td> 2000</td>
-                    <td> 20% </td>
-                    <td> 17% </td>
-                </tr>
-                <tr>
-                    <td>2002 </td>
-                    <td> 35% </td>
-                    <td> 22% </td>
-                </tr>
-                <tr>
-                    <td> 2004 </td>
-                    <td> 45% </td>
-                    <td> 42% </td>
-                </tr>
-                <tr>
-                    <td> 2008 </td>
-                    <td> 80% </td>
-                    <td> 51% </td>
-                </tr>
-                <tr>
-                    <td> 2012 </td>
-                    <td> 100% </td>
-                    <td> 76% </td>
-                </tr>
-            </table>
+                    <tr>
+                        <td>2002 </td>
+                        <td> 35% </td>
+                        <td> 22% </td>
+                    </tr>
+                    <tr>
+                        <td> 2004 </td>
+                        <td> 45% </td>
+                        <td> 42% </td>
+                    </tr>
+                    <tr>
+                        <td> 2008 </td>
+                        <td> 80% </td>
+                        <td> 51% </td>
+                    </tr>
+                    <tr>
+                        <td> 2012 </td>
+                        <td> 100% </td>
+                        <td> 76% </td>
+                    </tr>
+                </table>
+
+                <p> Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/">
+                        tool online </a> dedicato allo scopo. Una volta
+                    ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei veri developers
+                    come loro:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IjzdMvuzxDY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
         </main>
+
+        <aside>
+            <h2> Novità </h2>
+            <p> Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter: </p>
+
+            <div class="emailForm">
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="inserisci la tua e-mail">
+                    <
+                </fieldset>
+            </div>
+        </aside>
 
     </div>
 </body>
