@@ -118,7 +118,8 @@ footer {
     font-size: 25px;
 }
 
-footer h2, a {
+footer h2,
+a {
     color: white;
 }
 
