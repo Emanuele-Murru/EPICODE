@@ -3,142 +3,174 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Sviluppo di una pagina web - Blog Epicode </title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/EPICODE-pitto-color.png">
+    <link rel="icon" type="image/x-icon" href="/assets/images/EPICODE-pitto-color.png"> 
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <img src="./assets/images/EPICODE-pitto-color.png" alt="logoEpicode">
-
+    <header>
+        <div>
+            <img h> alt="logoEpicode">
             <p> Epicode - Il blog dei developers</p>
-
-            <!--inizio menu-->
+        </div>
+        <nav>
             <ul>
-                <li> <a href=""> Home </a> </li>
-                <li> <a href=""> Articoli </a> </li>
-                <li> <a href=""> Job </a> </li>
+                <li> <a href="javascript:void(0)" title="Home"> Home </a> </li>
+                <li> <a href="javascript:void(0)" title="Elenco degli articoli tecnici pubblicati"> Articoli </a>
+                </li>
+                <li> <a href="javascript:void(0)" title="Candidati inviando un tuo cv"> Job </a> </li>
             </ul>
-            <!--fine menu-->
-        </header>
+        </nav>
+    </header>
 
-        <hr>
+    <hr />
 
-        <main>
-            <div class="post">
-                <h2> Come creare un template per i post</h2>
-                <p> di Mario Rossi - pubblicato il 25-10-2020</p>
+    <main>
+        <article>
 
-                <p> La prima cosa da fare è suddividere in blocchi logic la pagina, identificando le <strong> parti
-                        comuni </strong> da identificare a tutte le pagine</p>
+            <h2> Come creare un template per i post</h2>
+            <p> di Mario Rossi - pubblicato il 25-10-2020</p>
 
-                <p> Le varie aree saranno quindi suddivise in: </p>
+            <p> La prima cosa da fare è suddividere in blocchi logic la pagina, identificando le <strong> parti
+                    comuni </strong> da identificare a tutte le pagine
+            </p>
 
-                <ul>
-                    <li>Contenuti di intestazione del tag &lt header &gt </li>
-                    <li>Contenuti centrali variabili del tag &lt main &gt (corpo principale) </li>
-                    <li>Contenuti di fine pagina comuni, da inserire nel tag &lt footer &gt </li>
-                </ul>
+            <p> Le varie aree saranno quindi suddivise in: </p>
 
-                <h2> Formattazione del codice</h2>
-                <p> Il testo del'articolo dovrà essere formattato per identificare tutte le parti da <strong>
-                        selezionare con i CSS </strong>. Perciò i passi saranno:</p>
+            <ul>
+                <li>Contenuti di intestazione del tag &lt header &gt </li>
+                <li>Contenuti centrali variabili del tag &lt main &gt (corpo principale) </li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag &lt footer &gt </li>
+            </ul>
 
-                <ol>
-                    <li> Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato
-                    </li>
-                    <li> Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso </li>
-                    <li> Applicare gli stili CSS </li>
-                </ol>
-            </div>
+            <h2> Formattazione del codice</h2>
 
-            <div class="tabella">
-                <p> L'applicazione di stili CSS è cresciut negli anni fino a raggiungere la diffusione pressochè totale.
-                </p>
-                <table>
-                    <caption> Diffusione del CSS</caption>
-                    <thead>
-                        <tr>
-                            <th> Anno </th>
-                            <th> % di utilizzo </th>
-                            <th> Supporto browsers</th>
-                        </tr>
-                    </thead>
+            <p> Il testo del'articolo dovrà essere formattato per identificare tutte le parti da <strong>
+                    selezionare con i CSS </strong>. Perciò i passi saranno:
+            </p>
+
+            <ol>
+                <li> Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato </li>
+                <li> Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso </li>
+                <li> Applicare gli stili CSS </li>
+            </ol>
+
+            <p> L'applicazione di stili CSS è cresciut negli anni fino a raggiungere la diffusione pressochè totale.
+            </p>
+
+            <table>
+
+                <caption> Diffusione del CSS</caption>
+
+                <thead>
+
+                    <tr>
+                        <th> Anno </th>
+                        <th> % di utilizzo </th>
+                        <th> Supporto browsers</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
                     <tr>
                         <td> 2000</td>
                         <td> 20% </td>
                         <td> 17% </td>
                     </tr>
+
                     <tr>
                         <td>2002 </td>
                         <td> 35% </td>
                         <td> 22% </td>
                     </tr>
+
                     <tr>
                         <td> 2004 </td>
                         <td> 45% </td>
                         <td> 42% </td>
                     </tr>
+
                     <tr>
                         <td> 2008 </td>
                         <td> 80% </td>
                         <td> 51% </td>
                     </tr>
+
                     <tr>
                         <td> 2012 </td>
                         <td> 100% </td>
                         <td> 76% </td>
                     </tr>
-                </table>
 
-                <p> Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/">
-                        tool online </a> dedicato allo scopo. Una volta
-                    ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei veri developers
-                    come loro:</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/IjzdMvuzxDY"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-        </main>
+                </tbody>
+
+            </table>
+
+            <p> Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/">
+                    tool online </a> dedicato allo scopo. Una volta
+                ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei veri developers
+                come loro:
+            </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IjzdMvuzxDY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <section>
+                <h2> Novità </h2>
+                <p> Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter: </p>
+
+                <form method="post" action="elabora_form.php">
+                    <fieldset>
+                        <input type="email" id="user_email" name="email" placeholder="Inserisci la tua e-mail"
+                            required />
+                        <button type="submit"> Iscriviti! </button>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
 
         <aside>
-            <h2> Novità </h2>
-            <p> Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter: </p>
-
-            <div class="emailForm">
-                <fieldset>
-                    <input type="email" id="email" name="email" required placeholder="Inserisci la tua e-mail">
-                    <input type="submit" placeholder="Iscriviti!"/>
-                </fieldset>
-            </div>
 
             <h2> Articoli correlati</h2>
 
-            <article>
-                <p> <a href=""> Validare il codice HTML </a></p>
+            <div>
+                <a href="javascript:void(0)"
+                    title="Passaggi guidati per validare correttamente tutto il codice sviluppato"> Validare il codice
+                    HTML </a>
                 <p> Categoria: develop </p>
                 <p> Data: 18-9-2020</p>
-            </article>
-            <article>
-                <p> <a href=""> Correggere la sintassi </a></p>
+            </div>
+            <div>
+                <a href="javascript:void(0)"
+                    title="Passaggi guidati per controllare e correggere tutto il codice sviluppato"> Correggere la
+                    sintassi </a>
                 <p> develop </p>
                 <p> Data: 16-9-2020</p>
-            </article>
-            <article>
-                <p> <a href=""> Meno Kb nella pagina </a></p>
+            </div>
+            <div>
+                <a href="javascript:void(0)" title="Consigli ed approci per ridurre il peso della pagina"> Meno Kb nella
+                    pagina </a>
                 <p> ottimizzazione </p>
                 <p> Data: 30-9-2020</p>
-            </article>
-            <hr>
+            </div>
         </aside>
+    </main>
 
-        <footer>
-            <p> Blog Epicode &copy2021</p>
-            <p> Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. <a href="mailto:info@epicode.school"> info@epicode.school </a></p>
-        </footer>
+    <footer>
+        <p> Blog Epicode &copy2021</p>
+        <address>
+            Testata online di Mario Rossi, registrata con prot. n.213/2018 -
+            via Luigi Einaudi 2 - Milano. P.IVA 00112233.
+            <a href="mailto:info@epicode.school"
+                title="contattami per informazioni/lavoro/privacy">info@epicode.school</a>
+        </address>
+    </footer>
 
     </div>
 </body>
