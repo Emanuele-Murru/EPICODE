@@ -94,7 +94,7 @@ blockquote p {
 }
 
 #section04 {
-    padding: 4em;
+    padding: 3.5em;
 }
 
 .img-container img {
@@ -102,7 +102,7 @@ blockquote p {
 }
 
 .card p {
-    padding: 0 0.6em 2em 0.6em;
+    padding: 0 0.2em 2em 0.2em;
 }
 
 .card {
@@ -113,14 +113,25 @@ blockquote p {
 
 footer {
     background-color: #25a2c3;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 25px;
 }
 
-footer h2, a, p {
+footer h2, a {
+    color: white;
+}
+
+footer p {
     color: white;
 }
 
 footer a {
     text-decoration-color: #c8e7f0;
+}
+
+address {
+    margin: 50px;
 }
 
 hr {
