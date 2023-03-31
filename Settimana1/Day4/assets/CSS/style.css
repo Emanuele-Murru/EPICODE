@@ -1,40 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-header,
-main,
-footer {
-    text-align: left;
-    background-color: #fff3f3;
-    box-sizing: border-box;
+html,
+body {
+    background-image: url(../img/sfondo.png);
+    background-position: center;
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
 }
 
-body {
-    background-image: url(../images/sfondo.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 2em ;
-    font-family: Poppins, 'Helvetica';
-    text-align: start;
+.container {
+    margin: 0 1em auto;
+}
+
+.up {
+    text-transform: uppercase;
 }
 
 header {
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, rgb(0, 147, 233) 0%, #80D0C7 100%);
+    background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+    padding: 2em;
+    font-weight: 400;
+    color: white;
     text-align: center;
 }
 
 header ul {
     display: inline-block;
-    text-align: start;
-    
+    text-align: center;
+    list-style: none;
+    padding: 0;
 }
 
-a:link {
+header p {
+    font-weight: bold;
+}
+
+header a {
     text-decoration: none;
-    text-decoration-color: white;
-
+    color: white;
+    font-weight: 600;
 }
+
+header nav li a:hover {
+    color: red;
+}
+
+#logo {
+    width: 18rem;
+}
+
 main {
+    background-color: white;
+}
+
+article {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+h1 {
     padding: 1em;
+    font-weight: bold;
+    text-align: start;
+}
+
+h1+p {
+    color: #a0a0a0;
+}
+
+table {
+    margin-bottom: 2em;
+}
+
+main thead {
+    background-color: #3f6bca;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table + a {
+    text-decoration: #00a0c6;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+footer {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    background: rgb(41, 39, 191);
+    background: linear-gradient(0deg, rgb(25, 12, 98) 0%, rgba(5,85,103,1) 68%);
+    text-align: center;
+}
+
+footer a {
+    color: fuchsia;
 }

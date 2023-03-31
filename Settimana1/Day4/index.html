@@ -3,33 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sviluppo di una pagina web - Blog Epicode </title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/EPICODE-pitto-color.png">
+    <title>Retry</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 
 <body>
     <div class="container">
         <header>
+
+            <div id="top">
+                <img id="logo" src="assets/img/logo.svg" alt="OldLogoEpicode">
+            </div>
+            <p class="up">
+                Epicode - Il blog dei developers
+            </p>
+
             <nav>
-                <img id="logo" src="assets/images/logo.svg" alt="logoEpicode">
-                <h2> EPICODE - IL BLOG DEI DEVELOPERS </h2>
                 <ul>
-                    <li> <a href="#top" title="Home"> HOME </a> </li>
-                    <li> <a href="#articles" title="ARTICOLI"> ARTICOLI </a> </li>
-                    <li> <a href="#bottom" title="LAVORA CON N0I"> LAVORA CON NOI </a> </li>
+                    <li> <a href="#top" title="Home" class="up"> &rArr; Home &lArr; </a> </li>
+                    <li> <a href="#articles" title="Elenco degli articoli tecnici pubblicati" class="up"> &rArr;
+                            Articoli &lArr; </a> </li>
+                    <li> <a href="#bottom" title="Candidati inviando un tuo cv" class="up"> &rArr; Lavora con noi &lArr;
+                        </a> </li>
                 </ul>
             </nav>
-        </header>
 
-        <hr />
+        </header>
 
         <main>
             <article>
+                <h1> Come creare un template per i post </h1>
 
-                <h2> Come creare un template per i post</h2>
-                <p> di Mario Rossi - pubblicato il 25-10-2020</p>
+                <p id="grey">
+                    <span class="material-symbols-rounded"> edit </span> di Mario Rossi -
+
+                    <span class="material-symbols-outlined"> schedule </span> pubblicato il 25-10-2020
+                </p>
 
                 <p> La prima cosa da fare è suddividere in blocchi logic la pagina, identificando le <strong> parti
                         comuni </strong> da identificare a tutte le pagine
@@ -38,16 +53,25 @@
                 <p> Le varie aree saranno quindi suddivise in: </p>
 
                 <ul>
+                    <li>Contenuti di intestazione del tag <code> &lt; header &gt; </code> </li>
+                    <li>Contenuti centrali variabili del tag <code> &lt; main &gt; </code> (corpo principale) </li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag <code> &lt; footer &gt; </code> </li>
+                </ul>
+
+                <h2> Formattazione del codice </h2>
+
+                <p>
+                    Il testo del'articolo dovrà essere formattato per identificare tutte le parti da <strong>
+                        selezionare con i CSS </strong>. Perciò i passi saranno:
+                </p>
+
+                <ul>
                     <li>Contenuti di intestazione del tag &lt header &gt </li>
                     <li>Contenuti centrali variabili del tag &lt main &gt (corpo principale) </li>
                     <li>Contenuti di fine pagina comuni, da inserire nel tag &lt footer &gt </li>
                 </ul>
 
-                <h2> Formattazione del codice</h2>
-
-                <p> Il testo del'articolo dovrà essere formattato per identificare tutte le parti da <strong>
-                        selezionare con i CSS </strong>. Perciò i passi saranno:
-                </p>
+                <p></p>
 
                 <ol>
                     <li> Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato
