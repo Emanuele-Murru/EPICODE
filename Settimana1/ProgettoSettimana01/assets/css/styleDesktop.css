@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+}
+
+#logo {
+    background-color: black;
+    padding: 15px;
+}
+
+#logo img {
+    width: 10em;
+}
+
+#corsoDev {
+    background-image: url(../images/banner.jpg);
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+}
