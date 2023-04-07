@@ -105,23 +105,23 @@ h1 {
     overflow: hidden;
 }
 
-.containerImg{
+.containerImg {
     margin: 2em 0;
 }
 
-.containerImg img{
+.containerImg img {
     width: 100%;
 }
 
 
-figcaption{
+figcaption {
     font-size: 1.5em;
     font-weight: 600;
     text-align: center;
 }
 
-.containerImg a{
-    color:  #347684;
+.containerImg a {
+    color: #347684;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
@@ -135,7 +135,7 @@ aside {
     text-align: center;
 }
 
-aside a{
+aside a {
     color: white;
 }
 
