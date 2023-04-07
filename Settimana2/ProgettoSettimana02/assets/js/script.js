@@ -12,7 +12,7 @@ REGOLE
 
 // const pets = ['dog', 'cat', 'hamster', 'redfish']
 
-// for(i = 0; i < pets.length; i++){
+// for(let i = 0; i < pets.length; i++){
 //   console.log(pets[i])
 // }
 
@@ -23,7 +23,7 @@ REGOLE
 */
 
 // const pets = ['dog', 'cat', 'hamster', 'redfish']
-// for( i = 0; i < pets.length; i++){
+// for(let i = 0; i < pets.length; i++){
 //   pets.sort()
 //   console.log(pets[i]) 
 // }
@@ -37,7 +37,7 @@ REGOLE
 // const pets = ['dog', 'cat', 'hamster', 'redfish']
 // pets.reverse()
 
-// for( i = 0; i < pets.length; i++){
+// for(let i = 0; i < pets.length; i++){
 //   console.log(pets[i])
 // };
 
@@ -49,11 +49,10 @@ REGOLE
 // pets.shift()
 // pets.push('dog')
 
-// for(i = 0; i < pets.length; i++){
+// for(let i = 0; i < pets.length; i++){
 //   console.log(pets[i])
 // }
 
-// console.log(pets)
 
 
 /* ESERCIZIO 5
@@ -80,28 +79,42 @@ const cars = [
   },
 ]
 
+for (let i = 0; i < cars.length; i++) {
+  cars[i].licensePlate = "GB35X92M";
+}
+
+console.log(cars);
+
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 
-cars.push({
-  brand: "BMW",
-  model: "GT",
-  color: "black",
-  trims: ["turbo", "GT", "sport-series"]
 
-})
+cars.push({
+  brand: 'Tesla',
+    model: 'Model 3',
+    color: 'Green',
+    trims: ['RWD', 'Long Range', 'Performance'],
+    licensePlate: "GB35X92M"
+}); 
+
+for( let i = 0; i < cars.length; i++){
+  cars[i].trims.pop();
+}
+
+console.log(cars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
-const justTrims = []
+
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
