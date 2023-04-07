@@ -1,0 +1,151 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    background-color: #222F3F;
+    padding-left: 3em;
+}
+
+.logo img {
+    width: 10em;
+    margin: 1em;
+}
+
+nav {
+    background-color: #364759;
+    padding-left: 4em;
+    padding-top: 0.2em;
+    height: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0.5em;
+    font-size: 1.3em;
+    color: white;
+}
+
+main {
+    background-color: #E9EDEE;
+    padding: 1em 4em;
+}
+
+.banners p {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.orangeBanner {
+    background-color: #F56600;
+    margin: 1em 0 2em 0;
+}
+
+.orangeBanner p {
+    line-height: 2;
+}
+
+.greenBanner {
+    background-image: url(../img/bg-image.png);
+    background-size: contain;
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+}
+
+.greenBanner p {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#findGift {
+    background-color: #FFFFFF;
+    margin: 1.5em 0;
+}
+
+#text2 {
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#text3 {
+    display: inline-block;
+    color: #347684;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.row {
+
+    text-align: center;
+}
+
+.img {
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgb(220, 220, 220);
+    width: 304px;
+    height: 379px;
+    object-fit: cover;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.containerImg{
+    margin: 2em 0;
+}
+
+.containerImg img{
+    width: 100%;
+}
+
+
+figcaption{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.containerImg a{
+    color:  #347684;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+aside {
+    background-color: #364759;
+    padding-left: 2em;
+    padding-top: 0.2em;
+    height: 2em;
+    text-align: center;
+}
+
+aside a{
+    color: white;
+}
+
+footer {
+    background-color: #222F3F;
+    padding-left: 2em;
+    text-align: center;
+}
+
+footer img {
+    width: 10em;
+    margin: 2em;
+}
