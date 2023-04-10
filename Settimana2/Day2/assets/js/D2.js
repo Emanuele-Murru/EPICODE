@@ -23,15 +23,15 @@ REGOLE
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
-var name = 'Emanuele';
+let name = 'Emanuele';
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
-var numero1 = 12;
-var numero2 = 20;
-var somma = numero1 + numero2;
+const numero1 = 12;
+const numero2 = 20;
+const somma = numero1 + numero2;
 console.log(somma);
 
 
@@ -39,19 +39,21 @@ console.log(somma);
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
-var x = 12;
+const x = 12;
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-// var name = 'Murru';
+name = 'Murru';
+console.log(name);
 
-// const myname = 'Emanuele';
-// const myname = 'Luca';
+//The next example it'll be an error -->
 
-// console.error();
+// const myName = 'Emanuele';
+// myName = 'Luca'
+// console.log(myName);
 
 
 /* ESERCIZIO 6
@@ -68,11 +70,16 @@ console.log(x - 4);
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
-var name1 = 'john';
-var name2 = 'John';
-console.log(name1 === name2);
 
-var nome1e2 = name2.toLowerCase();
+const name1 = 'john';
+const name2 = 'John';
 
-console.log(nome1e2 === name1);
+console.log(name1===name2);
+
+const name2LowerCase = name2.toLowerCase();
+
+console.log(name1 === name2LowerCase);
+// var nome1e2 = name2.toLowerCase();
+
+// console.log(nome1e2 === name1);
 
