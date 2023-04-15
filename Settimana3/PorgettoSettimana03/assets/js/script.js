@@ -544,9 +544,13 @@ colorAllTds();
 
 let td = document.getElementsByTagName("td");
 
-for (let i = 0; i < td.length; i++) {
+function printText(){
+  for (let i = 0; i < td.length; i++) {
   console.log(td[i].textContent);
 }
+}
+
+printText();
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
