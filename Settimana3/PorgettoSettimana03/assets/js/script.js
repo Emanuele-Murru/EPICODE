@@ -558,7 +558,7 @@ printText();
 
 function addBg() {
   for (let link of document.querySelectorAll("a")) {
-    link.style.backgroundColor = "blue";
+    link.style.backgroundColor = "red";
   }
 }
 
