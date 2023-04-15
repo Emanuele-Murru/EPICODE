@@ -23,17 +23,17 @@ REGOLE
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
-let name = 'Emanuele';
+var name = 'Emanuele';
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
-const numero1 = 12;
-const numero2 = 20;
-const somma = numero1 + numero2;
-console.log(somma);
+const valore1 = 12;
+const valore2 = 20;
+const somma = valore1 + valore2;
 
+console.log(somma); //or directly console.log(valore1 + valore2)
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -71,15 +71,24 @@ console.log(x - 4);
 */
 
 
+// const name1 = 'john';
+// const name2 = 'John';
+
+// console.log(name1===name2);
+
+// const name2LowerCase = name2.toLowerCase();
+
+// console.log(name1 === name2LowerCase);
+// // var nome1e2 = name2.toLowerCase();
+
+// // console.log(nome1e2 === name1);
+
+
+
 const name1 = 'john';
-const name2 = 'John';
+let name2 = 'John';
 
-console.log(name1===name2);
+console.log(name1 === name2);
 
-const name2LowerCase = name2.toLowerCase();
-
-console.log(name1 === name2LowerCase);
-// var nome1e2 = name2.toLowerCase();
-
-// console.log(nome1e2 === name1);
-
+name2 = name2.toLowerCase;
+console.log(name1 === name2);
