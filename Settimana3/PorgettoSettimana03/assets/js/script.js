@@ -25,7 +25,7 @@ console.log(sum);
 
 console.log('ESERCIZIO B');
 
-const random = Math.floor(Math.random() * 20);
+const random = Math.floor(Math.random() * 21);
 console.log(random);
 
 
@@ -614,8 +614,9 @@ addClass();
 console.log('ESERCIZIO 27')
 
 function halfTree(num9) {
+  let row1 = '';
   for (let i = 0; i < num9; i++) {
-}
+ }
 }
 
 console.log(halfTree());
