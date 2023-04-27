@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    background-color: gray;
+    font-family: 'Indie Flower', cursive;
+    background-image: url(/SfondoLavagna.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.postIt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18em;
+    height: 18em;
+    margin: 5em;
+    box-shadow: 6px 6px 30px rgb(41, 41, 41);
+    transition: all 600ms;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 2em;
+}
+
+#postIt1 {
+    background-color: lightblue;
+    transform: rotate(-15deg);
+}
+
+#postIt2 {
+    background-color: lightgreen;
+    transform: rotate(2deg);
+}
+
+#postIt3 {
+    background-color: lightsalmon;
+    transform: rotate(-11deg);
+}
+
+#postIt4 {
+    background-color: blue;
+    transform: rotate(-3deg);
+}
+
+#postIt5 {
+    background-color: lightseagreen;
+    transform: rotate(7deg);
+}
+
+#postIt6 {
+    background-color: lawngreen;
+    transform: rotate(-10deg);
+}
+
+#postIt7 {
+    background-color: rebeccapurple;
+    transform: rotate(24deg);
+}
+
+
+#postIt8 {
+    background-color: red;
+    transform: rotate(15deg);
+}
+
+#postIt1:hover,
+#postIt2:hover,
+#postIt3:hover,
+#postIt4:hover,
+#postIt5:hover,
+#postIt6:hover,
+#postIt7:hover,
+#postIt8:hover {
+    transform: rotate(0) scale(1.25);
+}
+
+@keyframes {
+    
+}
