@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    height: 60px;
+    margin: 0 6%;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+#getStarted button {
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    width: 90px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+#getStarted a {
+    color: white;
+}
+
+.section_container {
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+}
+
+.section_container h2 {
+    font-family: 'Spectral', serif;
+    font-size: 5.5em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.section_container p {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.hero {
+    position: relative;
+    padding-top: 50px;
+}
+
+.homepage {
+    margin: 0 6%;
+    display: flex;
+    flex-direction: row;
+    height: 462px;
+}
+
+.homepage button {
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    width: 160px;
+    height: 40px;
+    padding: 2px;
+    margin-top: 2em;
+    color: white;
+}
+
+.m {
+    position: absolute;
+    right: 0px;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/************************************************ MAIN ************************************************/
+
+/* Trend Articles */
+#main {
+    margin: 0 6%;
+    position: relative;
+}
+
+#trend_articles {
+    display: flex;
+    margin-top: 3em;
+}
+
+#trend_articles h2 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 650px;
+    margin-bottom: 3em;
+}
+
+.article h2{
+    margin: 0;
+    font-size: 1em;
+}
+
+.sp {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right:30px;
+}
+
+.sp span {
+    display: flex;
+    font-size: 2em;
+    color: rgba(230, 230, 230, 1);
+    position: absolute;
+    bottom: 50%;
+}
+
+.articles_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+}
+
+.articles_content span,p {
+    display: inline;
+    margin: 0;
+}
+
+.img_articles_content {
+    display: flex;
+    align-items: center;
+}
+
+.img_articles_content img{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.8em;
+}
+
+.section2 {
+    width: 50em;
+}
+
+.section2 h2 {
+    margin-bottom: 10px;
+}
+
+.preview img{
+    display: inline-block;
+    width: 200px;
+}
+
+.section2_content {
+    display: flex;
+}
+
+/* SECTION 2 */
+
+#articleContainer{
+    display: flex;
+    justify-content: space-between;   
+}
+
+
+#column{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+
+.card{
+    display: flex;
+    width: 45em;
+    margin-bottom: 4em;
+}
+
+.articleSection2{
+    width: 30em;
+    margin-right: 1.5em;
+}
+
+.imgArticle{
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.5em;
+}
+
+.title{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.description{
+    color: rgb(176, 176, 176);
+    margin-bottom: 1.2em;
+}
+
+.date{
+    color: rgb(176, 176, 176);
+    font-size: 0.8em;
+}
+
+.sideImg{
+    width: 15em;
+}
+
+.dateSpace{
+    display: flex;
+    justify-content: space-between;
+}
+
+#moreInfos{
+    width: 25em;
+}
+
+#titleAside{
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+#containerAside{
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+#tags{
+    padding: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tag{
+    background-color: #efefef;
+    width: fit-content;
+    font-size: 0.9em;
+    border-radius: 45px;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+
+#help{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.helpTag{
+    margin-right: 1em;
+    margin-bottom: 1em;
+    color: rgb(176, 176, 176);
+}
