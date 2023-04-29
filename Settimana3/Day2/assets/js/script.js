@@ -3,15 +3,15 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
-shuffleWords();
-
 function shuffleWords(word1, word2) {
+  let parola2;
+  let parola1;
   let anotherWord = word1.substring(0,2) + word2.slice(-3);
   anotherWord = anotherWord.toUpperCase();
   return anotherWord;
 }
 
-console.log(shuffleWords('Emanuele', 'Murru'))
+console.log(shuffleWords('Emanuele', 'Murru'));
 
 
 /* ESERCIZIO 2
@@ -30,6 +30,13 @@ function elementsGenerator() {
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
 */
 
+const arreyNumeri = [3,6,8,11,33,14,17]
+
+function numeriPari () {
+  arreyNumeri.filter()
+}
+
+console.log(arreyNumeri[0]);
 /* ESERCIZIO 4
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
