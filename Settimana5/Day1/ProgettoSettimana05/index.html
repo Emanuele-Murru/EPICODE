@@ -23,7 +23,8 @@
                     <a class="navLinks" href="javascript:void(0)">Membership</a>
                     <a class="navLinks" href="javascript:void(0)">Write</a>
                     <a class="navLinks" href="javascript:void(0)">Sign in</a>
-                    <div id="getStarted"><button type="button"><a href="javascript:void(0)">Get started</a></button></div>
+                    <div id="getStarted"><button type="button"><a href="javascript:void(0)">Get started</a></button>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -41,17 +42,17 @@
             </div>
         </section>
         <!------------------------------------------- SECTION TREND ARTICLES ------------------------------------>
-        <section id="main">
-            <div class="articles_container">
-                <div id="trend_articles">
-                    <img src="assets/imgs/svg/trending.svg" alt="Trending symble">
+        <div id="container_trend_articles">
+            <section id="trend_section">
+                <div id="trending">
+                    <img src="assets/imgs/svg/trending.svg" alt="Trending symbol">
                     <h2>TRENDING ON MEDIUM</h2>
                 </div>
 
                 <!-- Articles(Trend) -->
 
-                <div class="articles">
-                    <div class="article">
+                <div class="trend_articles">
+                    <div class="trend_article">
                         <div class="sp">
                             <span>01</span>
                         </div>
@@ -65,7 +66,7 @@
                         </div>
                     </div>
 
-                    <div class="article">
+                    <div class="trend_article">
                         <div class="sp">
                             <span>02</span>
                         </div>
@@ -79,7 +80,7 @@
                         </div>
                     </div>
 
-                    <div class="article">
+                    <div class="trend_article">
                         <div class="sp">
                             <span>03</span>
                         </div>
@@ -93,7 +94,7 @@
                         </div>
                     </div>
 
-                    <div class="article">
+                    <div class="trend_article">
                         <div class="sp">
                             <span>04</span>
                         </div>
@@ -107,7 +108,7 @@
                         </div>
                     </div>
 
-                    <div class="article">
+                    <div class="trend_article">
                         <div class="sp">
                             <span>05</span>
                         </div>
@@ -121,7 +122,7 @@
                         </div>
                     </div>
 
-                    <div class="article">
+                    <div class="trend_article">
                         <div class="sp">
                             <span>06</span>
                         </div>
@@ -135,277 +136,189 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+        </div>
 
-                <!-------------------------------- SECTION MAIN ARTICLES ------------------------------->
-                <div id="section2">
+        <!-------------------------------- SECTION ARTICLES ------------------------------->
 
-                    <div id="column">
-                        <div class="articleBox">
-
-                            <div class="card">
-
-                                <div class="articleSection2">
-                                    <div class="author">
-
-                                        <div class="imgArticle">
-                                            <img width="20px" src="assets/imgs/image07.jpeg" alt="" class="authorPic">
-                                        </div>
-
-                                        <div class="authorName">
-                                            <span>Robert Roy Britt</span>
-                                        </div>
-
-                                    </div>
-
-                                    <p class="title">How Old is Old?</p>
-
-                                    <p class="description">What we consider “old” changes dramatically with age, and our
-                                        perspectives can be predictive of how well we age</p>
-
-                                    <div class="dateSpace">
-                                        <p class="date">Oct 27 · 5 min read · Aging</p>
-                                        <img src="assets/imgs/svg/bookmark.svg" alt="Bookmark symble">
-                                    </div>
-
-                                </div>
-
-                                <img class="sideImg" src="assets/imgs/image08.jpeg" alt="">
-
+        <div id="articles_container">
+            <section class="articles">
+                <div class="column">
+                    <article>
+                        <div class="text">
+                            <div class="author">
+                                <img src="assets/imgs/image07.jpeg" alt="Robert Roy Britt pic">
+                                <p>Robert Roy Britt</p>
                             </div>
-
-                            <!-- articolo 02 -->
-                            <div class="card">
-
-                                <div class="articleSection2">
-                                    <div class="author">
-
-                                        <div class="imgArticle">
-                                            <img width="20px" src="assets/imgs/image09.jpeg" alt="" class="authorPic">
-                                        </div>
-
-                                        <div class="authorName">
-                                            <span>Taru Anniina Liikanen</span>
-                                        </div>
-
-                                    </div>
-
-                                    <p class="title">Is Taylor Swift Allowed to Speak About Fat?</p>
-
-                                    <p class="description">Can you speak about your trauma if you don't look
-                                        traumatized?</p>
-
-                                    <div class="dateSpace">
-                                        <p class="date">Oct 24 · 6 min read · Health</p>
-                                        <img src="assets/imgs/svg/bookmark.svg" alt="Bookmark symble">
-                                    </div>
-
-                                </div>
-
-                                <img class="sideImg" src="assets/imgs/image10.jpeg" alt="">
-
+                            <h2>How Old is Old?</h2>
+                            <p class="articles_paragraphs">What we consider “old” changes dramatically with age, and our
+                                perspectives can be predictive
+                                of how well we age</p>
+                            <div class="date_and_time">
+                                <span>Oct 27 · 5 min read · Aging <img src="assets/imgs/svg/star.svg" alt="star"></span>
+                                <img src="assets/imgs/svg/bookmark.svg" alt="bookmark symbol">
                             </div>
-
-                            <!-- articolo 03 -->
-                            <div class="card">
-
-                                <div class="articleSection2">
-                                    <div class="author">
-
-                                        <div class="imgArticle">
-                                            <img width="20px" src="assets/imgs/image11.jpeg" alt="" class="authorPic">
-                                        </div>
-
-                                        <div class="authorName">
-                                            <span>David Rodenas, Ph. D.</span>
-                                        </div>
-
-                                    </div>
-
-                                    <p class="title">Don’t Screw Up, You Will Be Found Guilty</p>
-
-                                    <p class="description">Software Engineer, yours is the right to produce high-quality
-                                        work at all times, also the liability.</p>
-
-                                    <div class="dateSpace">
-                                        <p class="date">Oct 15 · 5 min read · Software Engineering</p>
-                                        <img src="assets/imgs/svg/bookmark.svg" alt="Bookmark symble">
-                                    </div>
-
-                                </div>
-
-                                <img class="sideImg" src="assets/imgs/image12.png" alt="">
-
-                            </div>
-
-                            <!-- articolo 04 -->
-                            <div class="card">
-
-                                <div class="articleSection2">
-                                    <div class="author">
-
-                                        <div class="imgArticle">
-                                            <img width="20px" src="assets/imgs/image13.png" alt="" class="authorPic">
-                                        </div>
-
-                                        <div class="authorName">
-                                            <span>Microsoft Design</span>
-                                        </div>
-
-                                    </div>
-
-                                    <p class="title">Leave No Trace</p>
-
-                                    <p class="description">How product designers can break from the status quo and help
-                                        our planet</p>
-
-                                    <div class="dateSpace">
-                                        <p class="date">Oct 25 · 11 min read · Sustainability</p>
-                                        <img src="assets/imgs/svg/bookmark.svg" alt="Bookmark symble">
-                                    </div>
-
-                                </div>
-
-                                <img class="sideImg" src="assets/imgs/image14.png" alt="">
-
-                            </div>
-
-                            <!-- articolo 05 -->
-                            <div class="card">
-
-                                <div class="articleSection2">
-                                    <div class="author">
-
-                                        <div class="imgArticle">
-                                            <img width="20px" src="assets/imgs/image15.jpeg" alt="" class="authorPic">
-                                        </div>
-
-                                        <div class="authorName">
-                                            <span>Scott H. Young</span>
-                                        </div>
-
-                                    </div>
-
-                                    <p class="title">Variability, Not Repetition, is the Key to Mastery</p>
-
-                                    <p class="description">Bruce Lee is reported to have said, “I fear not the man who
-                                        has practiced 10,000 kicks once, but the man who has practiced one kick
-                                        10,000...</p>
-
-                                    <div class="dateSpace">
-                                        <p class="date">Oct 26 · 7 min read · Health</p>
-                                        <img src="assets/imgs/svg/bookmark.svg" alt="Bookmark symble">
-                                    </div>
-
-                                </div>
-
-                                <img class="sideImg" src="assets/imgs/image16.jpg" alt="">
-
-                            </div>
-
-                            <!-- articolo 06 -->
-                            <div class="card">
-
-                                <div class="articleSection2">
-                                    <div class="author">
-
-                                        <div class="imgArticle">
-                                            <img width="20px" src="assets/imgs/image17.png" alt="" class="authorPic">
-                                        </div>
-
-                                        <div class="authorName">
-                                            <span>Paul A. DeStefanoin Human Parts</span>
-                                        </div>
-
-                                    </div>
-
-                                    <p class="title">What I Overheard as an Escape Room Actor</p>
-
-                                    <p class="description">Lock a group of people in a room and you’ll witness some
-                                        surprising confessions</p>
-
-                                    <div class="dateSpace">
-                                        <p class="date">Jan 18, 2020 · 6 min read · Experiences</p>
-                                        <img src="assets/imgs/svg/bookmark.svg" alt="Bookmark symble">
-                                    </div>
-
-                                </div>
-
-                                <img class="sideImg" src="assets/imgs/image18.jpeg" alt="">
-
-                            </div>
-
-                            <!-- articolo 07 -->
-                            <div class="card">
-
-                                <div class="articleSection2">
-                                    <div class="author">
-
-                                        <div class="imgArticle">
-                                            <img width="20px" src="assets/imgs/image19.jpeg" alt="" class="authorPic">
-                                        </div>
-
-                                        <div class="authorName">
-                                            <span>Kim Scott</span>
-                                        </div>
-
-                                    </div>
-
-                                    <p class="title">6 Steps for Setting Measurable Goals to Avoid “Productivity
-                                        Paranoia”</p>
-
-                                    <p class="description">With more people working in remote and hybrid environments
-                                        than ever before, company, team and individual goals must be explicit and…</p>
-
-                                    <div class="dateSpace">
-                                        <p class="date">Oct 24 · 6 min read · Health</p>
-                                        <img src="assets/imgs/svg/bookmark.svg" alt="Bookmark symble">
-                                    </div>
-
-                                </div>
-
-                                <img class="sideImg" src="assets/imgs/image20.jpg" alt="">
-
-                            </div>
-
                         </div>
+                        <div class="article_img">
+                            <img src="assets/imgs/image08.jpeg" alt="people with different ages">
+                        </div>
+                    </article>
 
-                    </div>
+                    <article>
+                        <div class="text">
+                            <div class="author">
+                                <img src="assets/imgs/image09.jpeg" alt="Robert Roy Britt pic">
+                                <p>Taru Anniina Liikanen</p>
+                            </div>
+                            <h2>Is Taylor Swift Allowed to Speak About Fat?</h2>
+                            <p class="articles_paragraphs">Can you speak about your trauma if you don't look
+                                traumatized?</p>
+                            <div class="date_and_time">
+                                <span>Oct 24 · 6 min read · Health <img src="assets/imgs/svg/star.svg"
+                                        alt="star"></span>
+                                <img src="assets/imgs/svg/bookmark.svg" alt="bookmark symbol">
+                            </div>
+                        </div>
+                        <div class="article_img">
+                            <img src="assets/imgs/image10.jpeg" alt="Taylor Swift pic">
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="text">
+                            <div class="author">
+                                <img src="assets/imgs/image11.jpeg" alt="David Rodenas pic">
+                                <p>David Rodenas, Ph. D.</p>
+                            </div>
+                            <h2>Don’t Screw Up, You Will Be Found Guilty</h2>
+                            <p class="articles_paragraphs">Software Engineer, yours is the right to produce high-quality
+                                work at all times, also the liability.</p>
+                            <div class="date_and_time">
+                                <span>Oct 15 · 5 min read · Software Engineering <img src="assets/imgs/svg/star.svg"
+                                        alt="star"></span>
+                                <img src="assets/imgs/svg/bookmark.svg" alt="bookmark symbol">
+                            </div>
+                        </div>
+                        <div class="article_img">
+                            <img src="assets/imgs/image12.png" alt="lots of people in suit">
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="text">
+                            <div class="author">
+                                <img src="assets/imgs/image13.png" alt="Microsoft logo">
+                                <p>Microsoft Design</p>
+                            </div>
+                            <h2>Leave No Trace</h2>
+                            <p class="articles_paragraphs">How product designers can break from the status quo and help
+                                our planet</p>
+                            <div class="date_and_time">
+                                <span>Oct 25 · 11 min read · Sustainability</span>
+                                <img src="assets/imgs/svg/bookmark.svg" alt="bookmark symbol">
+                            </div>
+                        </div>
+                        <div class="article_img">
+                            <img src="assets/imgs/image14.png" alt="art">
+                        </div>
+                    </article>
+
+
+                    <article>
+                        <div class="text">
+                            <div class="author">
+                                <img src="assets/imgs/image15.jpeg" alt="Scott H. Young pic">
+                                <p>Scott H. Young</p>
+                            </div>
+                            <h2>Variability, Not Repetition, is the Key to Mastery</h2>
+                            <p class="articles_paragraphs">Bruce Lee is reported to have said, “I fear not the man who
+                                has practiced 10,000 kicks once, but the man who has practiced one kick 10,000...</p>
+                            <div class="date_and_time">
+                                <span>Oct 26 · 7 min read · Health <img src="assets/imgs/svg/star.svg"
+                                        alt="star"></span>
+                                <img src="assets/imgs/svg/bookmark.svg" alt="bookmark symbol">
+                            </div>
+                        </div>
+                        <div class="article_img">
+                            <img src="assets/imgs/image16.jpg" alt="Bruce Lee pic">
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="text">
+                            <div class="author">
+                                <img src="assets/imgs/image17.png" alt="Robert Roy Britt pic">
+                                <p>Paul A. DeStefanoin Human Parts</p>
+                            </div>
+                            <h2>What I Overheard as an Escape Room Actor</h2>
+                            <p class="articles_paragraphs">Lock a group of people in a room and you’ll witness some
+                                surprising confessions</p>
+                            <div class="date_and_time">
+                                <span>Jan 18, 2020 · 6 min read · Experiences <img src="assets/imgs/svg/star.svg"
+                                        alt="star"></span>
+                                <img src="assets/imgs/svg/bookmark.svg" alt="bookmark symbol">
+                            </div>
+                        </div>
+                        <div class="article_img">
+                            <img src="assets/imgs/image18.jpeg"
+                                alt="an long room completely red with a black chair in the middle of it">
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="text">
+                            <div class="author">
+                                <img src="assets/imgs/image19.jpeg" alt="Kim Scott pic">
+                                <p>Kim Scott</p>
+                            </div>
+                            <h2>6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”</h2>
+                            <p class="articles_paragraphs">With more people working in remote and hybrid environments
+                                than ever before, company, team and individual goals must be explicit and…</p>
+                            <div class="date_and_time">
+                                <span>Oct 24 · 6 min read · Health <img src="assets/imgs/svg/star.svg"
+                                        alt="star"></span>
+                                <img src="assets/imgs/svg/bookmark.svg" alt="bookmark symbol">
+                            </div>
+                        </div>
+                        <div class="article_img">
+                            <img src="assets/imgs/image20.jpg" alt="a teacher explaining something">
+                        </div>
+                    </article>
+
+
                 </div>
-                <aside id="moreInfos">
 
-                    <div id="containerAside">
 
-                        <h3 id="titleAside">Discover more of what matters to you</h3>
-                        
-                        <div id="tags">
-                            <a href="javascript:void(0)" class="tag"><span>Programming</span></a>
-                            <a href="javascript:void(0)" class="tag"><span>Data Science</span></a>
-                            <a href="javascript:void(0)" class="tag"><span>Technology</span></a>
-                            <a href="javascript:void(0)" class="tag"><span>Self Improvement</span></a>
-                            <a href="javascript:void(0)" class="tag"><span>Writing</span></a>
-                            <a href="javascript:void(0)" class="tag"><span>Relationships</span></a>
-                            <a href="javascript:void(0)" class="tag"><span>Machine Learning</span></a>
-                            <a href="javascript:void(0)" class="tag"><span>Productivity</span></a>
-                            <a href="javascript:void(0)" class="tag"><span>Politics</span></a>
+                <div class="aside_container">
+                    <aside>
+                        <div class="discover_more">
+                            <h2>DISCOVER MORE OF WHAT MATTERS TO YOU</h2>
+                            <button type="button">Programming</button>
+                            <button type="button">Data Science</button>
+                            <button type="button">Technology</button>
+                            <button type="button">Self-improvement</button>
+                            <button type="button">Writing</button>
+                            <button type="button">Relationships</button>
+                            <button type="button">Machine Learning</button>
+                            <button type="button">Productivity</button>
+                            <button type="button">Politics</button>
                         </div>
-
-                    </div>
-
-                    <div id="help">
-                        <a href="javascript:void(0)" class="helpTag"><span>Help</span></a>
-                        <a href="javascript:void(0)" class="helpTag"><span>Status</span></a>
-                        <a href="javascript:void(0)" class="helpTag"><span>Writers</span></a>
-                        <a href="javascript:void(0)" class="helpTag"><span>Blog</span></a>
-                        <a href="javascript:void(0)" class="helpTag"><span>Careers</span></a>
-                        <a href="javascript:void(0)" class="helpTag"><span>Privacy</span></a>
-                        <a href="javascript:void(0)" class="helpTag"><span>Terms</span></a>
-                        <a href="javascript:void(0)" class="helpTag"><span>About</span></a>
-                        <a href="javascript:void(0)" class="helpTag"><span>Knowable</span></a>
-                    </div>
-                   
-                </aside>
-        </section>
+                        <hr>
+                        <div class="links_aboutUs">
+                            <a href="javascript:void(0)">Help</a>
+                            <a href="javascript:void(0)">Status</a>
+                            <a href="javascript:void(0)">Writers</a>
+                            <a href="javascript:void(0)">Blog</a>
+                            <a href="javascript:void(0)">Careers</a>
+                            <a href="javascript:void(0)">Privacy</a>
+                            <a href="javascript:void(0)">Terms</a>
+                            <a href="javascript:void(0)">About</a>
+                            <a href="javascript:void(0)">Knowable</a>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 

@@ -196,9 +196,15 @@ article {
     flex-direction: column;
 }
 
+
+#articles_container {
+    position: relative;
+}
+
 aside {
     width: 400px;
     position: sticky;
+    top: 100px;
 }
 
 .author {
@@ -269,4 +275,9 @@ aside a {
 
 .links_aboutUs {
     margin-top: 2em;
+}
+
+
+.aside_container {
+    position: relative;
 }

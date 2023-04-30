@@ -104,29 +104,33 @@ header {
 /************************************************ MAIN ************************************************/
 
 /* Trend Articles */
-#main {
-    margin: 0 6%;
+
+#container_trend_articles {
+    border-bottom: 1px solid black;
+}
+
+#trend_section {
+    margin: 3em 6%;
     position: relative;
 }
 
-#trend_articles {
+#trending {
     display: flex;
-    margin-top: 3em;
 }
 
-#trend_articles h2 {
+#trending h2 {
     font-size: 1em;
     font-weight: 600;
     margin-left: 10px;
 }
 
-.articles {
+.trend_articles {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.article {
+.trend_article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -134,7 +138,7 @@ header {
     margin-bottom: 3em;
 }
 
-.article h2{
+.trend_article h2 {
     margin: 0;
     font-size: 1em;
 }
@@ -143,15 +147,16 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-right:30px;
+    padding-right: 30px;
 }
 
 .sp span {
     display: flex;
     font-size: 2em;
+    font-weight: 00;
     color: rgba(230, 230, 230, 1);
     position: absolute;
-    bottom: 50%;
+    bottom: 65%;
 }
 
 .articles_content {
@@ -160,133 +165,119 @@ header {
     margin-left: 3em;
 }
 
-.articles_content span,p {
-    display: inline;
-    margin: 0;
-}
-
 .img_articles_content {
     display: flex;
     align-items: center;
 }
 
-.img_articles_content img{
+.img_articles_content img {
     border-radius: 50px;
     width: 40px;
     height: 40px;
     margin-right: 0.8em;
 }
 
-.section2 {
-    width: 50em;
-}
-
-.section2 h2 {
-    margin-bottom: 10px;
-}
-
-.preview img{
-    display: inline-block;
-    width: 200px;
-}
-
-.section2_content {
-    display: flex;
-}
-
 /* SECTION 2 */
 
-#articleContainer{
+.articles {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
+    margin: 3% 6% 0;
 }
 
+article {
+    display: flex;
+    margin-bottom: 3em;
+    width: 100%;
+}
 
-#column{
+.column {
     display: flex;
     flex-direction: column;
-    margin-right: 2em;
 }
 
-.card{
+
+#articles_container {
+    position: relative;
+}
+
+aside {
+    width: 400px;
+    position: sticky;
+    top: 100px;
+}
+
+.author {
     display: flex;
-    width: 45em;
-    margin-bottom: 4em;
+    align-items: center;
 }
 
-.articleSection2{
-    width: 30em;
-    margin-right: 1.5em;
-}
-
-.imgArticle{
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 0.5em;
-}
-
-.title{
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-}
-
-.description{
-    color: rgb(176, 176, 176);
-    margin-bottom: 1.2em;
-}
-
-.date{
-    color: rgb(176, 176, 176);
-    font-size: 0.8em;
-}
-
-.sideImg{
-    width: 15em;
-}
-
-.dateSpace{
-    display: flex;
-    justify-content: space-between;
-}
-
-#moreInfos{
-    width: 25em;
-}
-
-#titleAside{
+.author p {
     font-weight: 500;
-    margin-bottom: 1em;
+    margin: 0;
 }
 
-#containerAside{
-    margin-bottom: 1em;
-    border-bottom: 1px solid rgb(229, 229, 229);
+.author img {
+    border-radius: 100px 100px;
+    width: 2em;
+    height: 2em;
+    margin-right: 15px;
 }
 
-#tags{
-    padding: 0.5em;
+.article_img {
+    margin-left: 2em;
+    width: 18.75em;
+    height: 13em;
+}
+
+.article_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    width: 60em;
+}
+
+.articles_paragraphs {
+    font-size: 1.2em;
+    margin: 0 0 2em 0;
+}
+
+.date_and_time {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.tag{
-    background-color: #efefef;
-    width: fit-content;
-    font-size: 0.9em;
-    border-radius: 45px;
+hr {
+    color: lightgray;
+}
+
+aside button {
+    color: gray;
+    font-weight: 800;
     padding: 1em;
-    margin-bottom: 0.5em;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px rgba(230, 230, 230, 1);
+    margin: 0.3em;
 }
 
-#help{
-    display: flex;
-    flex-wrap: wrap;
+aside a {
+    text-decoration: none;
+    color: gray;
+    margin: 0.5em;
 }
 
-.helpTag{
-    margin-right: 1em;
-    margin-bottom: 1em;
-    color: rgb(176, 176, 176);
+.discover_more {
+    margin-bottom: 2em;
+}
+
+.links_aboutUs {
+    margin-top: 2em;
+}
+
+
+.aside_container {
+    position: relative;
 }
