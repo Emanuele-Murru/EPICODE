@@ -194,15 +194,29 @@ console.log(me);
 //   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 // */
 
-new Array = [];
-Array.push = 0, 2, 3, 4, 5, 6, 7, 8, 9, 10;
-console.log(Array)
+nuovoLista = [];
+nuovoLista.push(0, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+console.log(nuovoLista) 
 
 // /* ESERCIZIO 15
 //   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 // */
 
-// /* SCRIVI QUI LA TUA RISPOSTA */
 
+nuovoLista.pop();
+nuovoLista.push(100);
+console.log(nuovoLista);
 
+//OPPURE 
 
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(arr1)
+
+const arr2 = arr1.indexOf(10)
+
+if( arr2 !== 100) {
+    arr1[arr2] = 100;
+}
+
+console.log(arr1);
