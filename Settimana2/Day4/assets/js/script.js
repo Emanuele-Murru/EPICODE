@@ -200,7 +200,7 @@ while (e < starWarsCharacters.length) {
   e++
 }
 
-console.log(`Peso totale equipaggio : $(totalMass)`)
+console.log(`Peso totale equipaggio : ${totalMass}`)
 
 
 /* ESERCIZIO 7
@@ -236,6 +236,10 @@ switch (true) {
 }
 
 
+
+
+
+
 /* ESERCIZIO 8
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
 */
@@ -255,7 +259,7 @@ Usa uno o più for loop per raggiungere il risultato
 
 (tip: cerca un metodo degli array per rimuovere un elemento)
 
-Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
+Una volta fatto crea un conosole.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
 
 for (let i = 0; i < femaleCharacters.length; i++) {
@@ -275,8 +279,5 @@ console.log(characters);
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
 
-let pippo = starWarsCharacters[Math.floor(Math.random()*starWarsCharacters)]
+let pippo = starWarsCharacters[Math.floor(Math.random()*starWarsCharacters)];
 
-
-
-`${}`
