@@ -1,0 +1,24 @@
+$colore_dotBell: #f5f4f8;
+$colore_viola: #7550fe;
+
+#hamburger {
+  border: 2px solid $colore_viola;
+}
+
+#bg_bell {
+  background-color: $colore_dotBell;
+
+  span {
+    background-color: $colore_viola;
+    top: 15%;
+    left: 80%;
+  }
+}
+
+
+#dot_avatar {
+  bottom: -20%;
+  left: 70%;
+}
+
+

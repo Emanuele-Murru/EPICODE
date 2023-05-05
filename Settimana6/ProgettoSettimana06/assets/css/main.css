@@ -1,0 +1,28 @@
+#hamburger {
+  border: 2px solid #7550fe;
+}
+
+#bg_bell {
+  background-color: #f5f4f8;
+}
+#bg_bell span {
+  background-color: #7550fe;
+  top: 15%;
+  left: 80%;
+}
+
+#dot_avatar {
+  bottom: -20%;
+  left: 70%;
+}
+
+#hero_section {
+  background-color: #7550fe;
+}
+#hero_section h2 {
+  color: white;
+  font-weight: 800;
+}
+#hero_section p {
+  color: #bca8ff;
+}/*# sourceMappingURL=main.css.map */
