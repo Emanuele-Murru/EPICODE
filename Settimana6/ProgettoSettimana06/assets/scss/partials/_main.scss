@@ -1,1 +1,57 @@
-#camera_video
+/* SUB SECTION HERO */
+.elementSection{
+    line-height: 0.5em;
+}
+
+.boxIcon{
+    padding: 1em;
+    background-color: #ffeeda;
+    i{
+        color: #c28135;
+        padding: 0.3em;
+    }
+}
+
+
+.avatar_container {
+    img {
+        width: 40px;
+        border-radius: 50%;
+    }
+}
+
+.card_container {
+    position: relative;
+
+    // .col {
+    //     width: 24%;
+    // }
+
+    .chevron_arrow_left{
+        width: 40px;
+        height: 40px;
+        color: black;
+        background-color: #c28135;
+        border-radius: 25px;
+        position: absolute;
+        bottom: 40%;
+        right: 100%;
+        z-index: 1;
+    }
+
+    .chevron_arrow_right{
+        width: 40px;
+        height: 40px;
+        color: black;
+        background-color: #c28135;
+        border-radius: 25px;
+        position: absolute;
+        bottom: 40%;
+        left: 100%;
+        z-index: 1;
+    }
+}
+
+// @media screen and (max-width:"480px") {
+    
+// }
