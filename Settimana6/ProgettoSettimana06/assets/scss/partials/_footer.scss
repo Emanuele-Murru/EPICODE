@@ -1,0 +1,33 @@
+footer {
+
+    #ciao {
+        justify-content: end;
+    }
+
+  ul { 
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 25px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #212529;
+    }
+  }
+}
+
+
+
+
+@media (max-width:480px) {
+    footer {
+        text-align: center;
+
+        #ciao {
+            justify-content: center;
+        }
+    }
+}

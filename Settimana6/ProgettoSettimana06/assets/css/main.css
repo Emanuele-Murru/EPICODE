@@ -109,6 +109,27 @@
   box-shadow: 2px 10px 15px 1px lightgray;
 }
 
+footer #ciao {
+  justify-content: end;
+}
+footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 25px;
+}
+footer ul a {
+  text-decoration: none;
+  color: #212529;
+}
+
+@media (max-width: 480px) {
+  footer {
+    text-align: center;
+  }
+  footer #ciao {
+    justify-content: center;
+  }
+}
 body {
   background-color: #f5f4f8;
 }/*# sourceMappingURL=main.css.map */
