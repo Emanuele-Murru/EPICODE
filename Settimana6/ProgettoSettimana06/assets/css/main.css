@@ -49,11 +49,14 @@
 .card_container {
   position: relative;
 }
+.card_container:hover {
+  color: purple;
+}
 .card_container .chevron_arrow_left {
   width: 40px;
   height: 40px;
-  color: black;
-  background-color: #c28135;
+  color: #dbd8e3;
+  background-color: #fefefe;
   border-radius: 25px;
   position: absolute;
   bottom: 40%;
@@ -63,8 +66,8 @@
 .card_container .chevron_arrow_right {
   width: 40px;
   height: 40px;
-  color: black;
-  background-color: #c28135;
+  color: #dbd8e3;
+  background-color: #fefefe;
   border-radius: 25px;
   position: absolute;
   bottom: 40%;
@@ -72,6 +75,36 @@
   z-index: 1;
 }
 
+@media (max-width: 480px) {
+  .card_container {
+    position: relative;
+  }
+  .card_container .chevron_arrow_left {
+    width: 40px;
+    height: 40px;
+    color: #dbd8e3;
+    background-color: #fefefe;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 40%;
+    right: 95%;
+    z-index: 1;
+  }
+  .card_container .chevron_arrow_right {
+    width: 40px;
+    height: 40px;
+    color: #dbd8e3;
+    background-color: #fefefe;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 40%;
+    left: 95%;
+    z-index: 1;
+  }
+  .card_column {
+    width: 25%;
+  }
+}
 body {
   background-color: #f5f4f8;
 }/*# sourceMappingURL=main.css.map */
