@@ -100,24 +100,60 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="row gap-2 row-sm-visible">
-                        <div class="col rounded-circle position-relative" id="bg_bell">
-                            <img src="assets/img/bell.svg" height="48px" width="28px" alt="Bell symbol">
-                            <span
-                                class="position-absolute translate-middle badge border border-light rounded-circle p-2">
-                            </span>
-                        </div>
-                        <div class="col position-relative">
-                            <img src="assets/img/avatar-7.jpg" height="50px" width="50px" class="rounded-circle"
-                                alt="Avatar Profile">
-                            <span
-                                class="position-absolute translate-middle badge border border-light rounded-circle bg-success p-2"
-                                id="dot_avatar">
-                            </span>
-                        </div>
 
+                    <!-- BELL AND PROFILE ICONS -->
+
+                    <div class="d-flex">
+                    <!--bell-->
+                    <button type="button" id="bg_bell" class="btn position-relative rounded-circle mx-3">
+                        <i class="bi bi-bell campanella"></i>
+                        <span class="position-absolute top-0 end-0 p-2 border rounded-circle">
+                        </span>
+                    </button>
+
+                    <!--profile-->
+                    <div class="position-relative">
+                        <img type="button" data-bs-toggle="dropdown" class="rounded-circle" id="avatarLogo"
+                            src="assets/img/avatar-1.jpg" alt="" data-bs-toggle="dropdown" data-bs-display="static"
+                            aria-expanded="false">
+                        <span id="greenDot"
+                            class="position-absolute translate-middle p-2 bg-success border border-white rounded-circle border-2">
+                        </span>
+                        <ul class="dropdown-menu dropdown-menu-end position-absolute">
+                            <li class="d-flex position-relative ">
+
+                                <img type="button" class="rounded-circle mx-3" style="width: 3em"
+                                    src="assets/img/avatar-1.jpg" alt="User face image">
+
+                                <div class="position-relative ">
+
+                                    <span id="greenDot1"
+                                        class="position-absolute bg-success  p-2 border border-light rounded-circle border-2">
+                                    </span>
+
+                                </div>
+
+                                <div class="me-2">
+                                    <p class="m-0">Annette Black</p>
+                                    <p class="m-0 grey">annette@geeksui.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-star me-2"></i>Subscription</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-power me-2"></i>Sing Out</a></li>
+                        </ul>
                     </div>
+
                 </div>
+                </div>
+            </div>
 
             </div>
         </nav>
@@ -501,7 +537,7 @@
                             <div class="card-body pb-0">
                                 <h6 class="card-title"><b>Revolitionize how you build the web</b></h6>
                                 <p><i class="bi bi-clock pe-2"></i>1h 46m<i
-                                        class="bi bi-bar-chart ps-2 pe-2 iconaRete"></i>Intermediate
+                                        class="bi bi-bar-chart-fill ps-2 pe-2 iconaRete"></i>Intermediate
                                 </p>
                                 <div class="d-flex stars">
                                     <i class="bi bi-star-fill text-warning"></i>
@@ -638,9 +674,11 @@
     <div class="container ">
         <footer class="row">
             <div class="col-sm-12 col-md-6">
-                <div><p> &#169 2022 Geeks. All Rights Reserved.</p></div>
+                <div>
+                    <p> &#169 2022 Geeks. All Rights Reserved.</p>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 d-flex" id="ciao">
+            <div class="col-sm-12 col-md-6 d-flex" id="footerText">
                 <div>
                     <ul>
                         <li><a href="">Privacy</a></li>

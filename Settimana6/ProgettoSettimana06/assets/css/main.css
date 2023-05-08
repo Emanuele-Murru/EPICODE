@@ -4,16 +4,27 @@
 
 #bg_bell {
   background-color: #f5f4f8;
+  width: 50px;
+  height: 50px;
 }
 #bg_bell span {
   background-color: #7550fe;
-  top: 15%;
+  left: 68%;
+}
+
+#greenDot {
+  top: 89%;
   left: 80%;
 }
 
-#dot_avatar {
-  bottom: -20%;
-  left: 70%;
+#greenDot1 {
+  top: 29px;
+  right: 7px;
+}
+
+#avatarLogo {
+  width: 50px;
+  height: 50px;
 }
 
 #hero_section {
@@ -42,7 +53,7 @@
 }
 
 .avatar_container img {
-  width: 40px;
+  width: 30px;
   border-radius: 50%;
 }
 
@@ -79,6 +90,13 @@
   .card_container {
     position: relative;
   }
+  .card_container .card h6 {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+  .card_container .card p {
+    font-size: 0.9rem;
+  }
   .card_container .chevron_arrow_left {
     width: 40px;
     height: 40px;
@@ -109,7 +127,7 @@
   box-shadow: 2px 10px 15px 1px lightgray;
 }
 
-footer #ciao {
+footer #footerText {
   justify-content: end;
 }
 footer ul li {
@@ -126,7 +144,7 @@ footer ul a {
   footer {
     text-align: center;
   }
-  footer #ciao {
+  footer #footerText {
     justify-content: center;
   }
 }

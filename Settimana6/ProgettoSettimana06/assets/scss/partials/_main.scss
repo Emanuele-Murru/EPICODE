@@ -15,7 +15,7 @@
 
 .avatar_container {
     img {
-        width: 40px;
+        width: 30px;
         border-radius: 50%;
     }
 }
@@ -55,6 +55,17 @@
 @media (max-width: 480px) {
     .card_container {
         position: relative;
+
+        .card {
+            h6 {
+                font-size: 0.8rem;
+                margin-bottom: 15px;
+            } 
+            
+            p {
+                font-size: 0.9rem;
+            }
+        }
     
         .chevron_arrow_left{
             width: 40px;
@@ -87,6 +98,7 @@
 }
 
 .card {
+
     &:hover {
         box-shadow: 2px 10px 15px 1px lightgray;
       }
