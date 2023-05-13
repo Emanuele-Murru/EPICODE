@@ -20,7 +20,7 @@ window.onload = () => {
       data.forEach((product) => {
         card += `
               <div class="col-md-3 mb-4">
-              <div class="card mb-4 shadow-sm h-100 ">
+              <div class="card mb-4 shadow-sm h-100">
               <img src="${product.imageUrl}" alt="">
                 <div class="card-body">
                   <h5 class="card-title">${product.name}</h5>
@@ -35,8 +35,8 @@ window.onload = () => {
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                    <a class="btn btn-primary"  role="button" href="details.html?id=${product._id}">Details</a>
-                    <a class="btn btn-info" href="back-office.html?id=${product._id}">Edit</a>
+                    <a class="btn btn-primary rounded" role="button" href="details.html?id=${product._id}">Details</a>
+                    <a class="btn btn-info ms-4 rounded" href="back-office.html?id=${product._id}">Edit</a>
                    </div>
                   </div>
                 </div>

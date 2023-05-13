@@ -33,7 +33,7 @@ productForm.addEventListener("submit", function (e) {
 
     headers: {
       "Content-type": "application/json",
-      Authorization: `Bearer ${token}`,
+      'Authorization': `Bearer ${token}`,
     },
 
     body: JSON.stringify(newProduct),
@@ -76,7 +76,7 @@ editProduct.addEventListener("click", function (evt) {
 
     headers: {
       "Content-type": "application/json",
-      Authorization: `Bearer ${token}`,
+      'Authorization': `Bearer ${token}`,
     },
 
     body: JSON.stringify(newProduct),
@@ -117,7 +117,7 @@ deleteProduct.addEventListener("click", function (evt) {
 
     headers: {
       "Content-type": "application/json",
-      Authorization: `Bearer ${token}`,
+      'Authorization': `Bearer ${token}`,
     },
 
     body: JSON.stringify(newProduct),
