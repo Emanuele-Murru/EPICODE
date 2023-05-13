@@ -14,7 +14,7 @@ window.onload = () => {
     .then((response) => response.json())
 
     .then((data) => {
-      console.log("Oggetti ottenuti con successo:", data);
+      console.log("Prodotti ottenuti dall' API con successo",);
 
       let card = "";
       data.forEach((product) => {
@@ -26,9 +26,6 @@ window.onload = () => {
                   <h5 class="card-title">${product.name}</h5>
                   <p class="card-text">
                   ${product.brand}
-                  </p>
-                  <p class="card-text">
-                  ${product._id}
                   </p>
                   <p class="card-text text-truncate">
                   ${product.description}
@@ -46,7 +43,7 @@ window.onload = () => {
               </div>
             </div>
               `;
-        console.log(product);
+        console.log("Prodotti stampati a schermo");
       });
       cardsRow.innerHTML = card;
     })
