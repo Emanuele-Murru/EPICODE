@@ -132,6 +132,7 @@ editProduct.addEventListener("click", function (evt) {
     .then((response) => {
       if (response.ok) {
         console.log("L'oggetto è stato modificato");
+        location.assign("./homepage.html");
       } else {
         throw new Error("Something goes wrong with the process");
       }
