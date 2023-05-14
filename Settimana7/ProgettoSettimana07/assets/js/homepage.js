@@ -2,7 +2,9 @@ const url = "https://striveschool-api.herokuapp.com/api/product/";
 const token =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMjk1NTg4Zjc0MDAwMTQyODc2ZDEiLCJpYXQiOjE2ODM4OTI1NjUsImV4cCI6MTY4NTEwMjE2NX0.4ya10MvjXWPHS6BdOGxSy0St76gpF4Wt0as3ptRhKSY";
 
-window.onload = () => {
+// ANDIAMO A RENDERIZZARE TUTTE CARDS CON IL GET 
+
+window.onload = () =>  {
   fetch(url, {
     method: "GET",
 
@@ -14,13 +16,13 @@ window.onload = () => {
     .then((response) => response.json())
 
     .then((data) => {
-      console.log("Prodotti ottenuti dall' API con successo",);
+      console.log("Prodotti ottenuti e convertiti in Json dall' API con successo");
 
       let card = "";
       data.forEach((product) => {
         card += `
-              <div class="col-md-3 mb-4">
-              <div class="card mb-4 shadow-sm h-100">
+              <div class="col-md-4 col-sm-12 col-lg-3 mb-4">
+              <div class="card mb-4 shadow-sm">
               <img src="${product.imageUrl}" alt="">
                 <div class="card-body">
                   <h5 class="card-title">${product.name}</h5>

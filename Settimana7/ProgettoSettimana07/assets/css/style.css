@@ -1,1 +1,18 @@
-/*# sourceMappingURL=style.css.map */
+/* NAVBAR */
+nav img {
+    object-fit: contain;
+    border-radius: 18px;
+    width: 50px;
+    height: 50px;
+}
+
+/* MAIN CONTAINER */
+#mainContainer {
+    background-image: url(https://cdn.shopify.com/s/files/1/0378/7109/products/108186G_B.jpg?v=1648827325);
+    background-size: cover;
+}
+
+CARDS
+.card {
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+}
