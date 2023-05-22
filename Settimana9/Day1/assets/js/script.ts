@@ -18,26 +18,3 @@ if(giocatore1 && giocatore2 !== dado) {
         console.log("Il giocatore 1 vince/ e' andato piu vicino")
     }
 } else {console.log("Pareggio");}
-
-// Creiamo un enum per inserire piu variabili all'interno
-// Ricordiamoci che per creare un enum il nome deve aver l'iniziale in maiuscolo
-
-// enum Partita {giocatore1 = randomNumber(), giocatore2 = randomNumber(), dado = randomNumber()}
-
-// console.log(Partita);
-
-// const gioca = ():void => {
-
-//     if(Partita.giocatore1 && Partita.giocatore2 !== Partita.dado){
-
-//         if(Math.abs(Partita.dado-Partita.giocatore1) > Math.abs(Partita.dado-Partita.giocatore2)) {
-//             console.log("Il giocatore 2 vince/ e' andato piu vicino");
-            
-//         } else {
-//             console.log("Il giocatore 1 vince/ e' andato piu vicino")
-//         }
-
-//     } else {
-//         console.log("Pareggio");
-//     }
-// }
