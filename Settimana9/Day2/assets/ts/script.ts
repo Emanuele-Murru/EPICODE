@@ -22,7 +22,7 @@ class SonAccount {
 
     oneWithdraw(prelievo:number):string {
         console.log(`Actual balance: ${this.balanceInit} euri`)
-        console.log(`Deposit: ${prelievo} euri`)
+        console.log(`Whitdraw: ${prelievo} euri`)
         this.balanceInit -= prelievo;
         return `Total balance ${this.balanceInit} euri`
     }
@@ -36,7 +36,7 @@ class SonAccount {
 
     twoWithdraw(prelievo:number):string {
         console.log(`Actual balance: ${this.balanceInit} euri`)
-        console.log(`Deposit: ${prelievo} euri`)
+        console.log(`Whitdraw: ${prelievo} euri`)
         this.balanceInit -= prelievo;
         return `Total balance ${this.balanceInit} euri`
     }
@@ -51,14 +51,14 @@ class MotherAccount extends SonAccount{
     twoDeposit(versamento:number):string {
         console.log(`Actual balance: ${this.balanceInit} euri`);
         console.log(`Deposit: ${versamento} euri`);
+        versamento += (versamento * 0.1);
         this.balanceInit += versamento;
-        this.balanceInit += (this.balanceInit * 0.1)
         return `Total balance plus 10% interests: ${this.balanceInit} euri`
     }
 
     twoWithdraw(prelievo:number):string {
         console.log(`Actual balance: ${this.balanceInit} euri`)
-        console.log(`Deposit: ${prelievo} euri`)
+        console.log(`Whitdraw: ${prelievo} euri`)
         prelievo -= (prelievo / 100 * 10)
         this.balanceInit -= prelievo;
         return `Total Balance less 10% interests:${this.balanceInit} euri`
@@ -74,12 +74,16 @@ console.log(newSon);
 console.log('-------------------------------------------------------');
 console.log(newSon.getAccount());
 console.log('-------------------------------------------------------');
+console.log("DEPOSIT");
 console.log(newSon.oneDeposit(150));
 console.log('-------------------------------------------------------');
+console.log("WITHDRAW");
 console.log(newSon.oneWithdraw(200));
 console.log('-------------------------------------------------------');
+console.log("DEPOSIT");
 console.log(newSon.twoDeposit(2050));
 console.log('-------------------------------------------------------');
+console.log("WITHDRAW");
 console.log(newSon.twoWithdraw(200));
 console.log('-------------------------------------------------------');
  
@@ -92,8 +96,16 @@ console.log(newMom);
 console.log('-------------------------------------------------------');
 console.log(newMom.getAccount());
 console.log('-------------------------------------------------------');
+console.log("DEPOSIT");
 console.log(newMom.twoDeposit(3050));
 console.log('-------------------------------------------------------');
-console.log(newMom.twoWithdraw(20));
+console.log("WITHDRAW");
+console.log(newMom.twoWithdraw(235));
+console.log('-------------------------------------------------------');
+console.log("DEPOSIT");
+console.log(newMom.twoDeposit(8050));
+console.log('-------------------------------------------------------');
+console.log("WITHDRAW");
+console.log(newMom.twoWithdraw(800));
 console.log('-------------------------------------------------------');
  
