@@ -16,7 +16,7 @@ class SonAccount {
     oneDeposit(versamento:number):string {
         console.log(`Actual balance: ${this.balanceInit} euri`);
         console.log(`Deposit: ${versamento} euri`);
-       this.balanceInit += versamento;
+        this.balanceInit += versamento;
         return `Total balance: ${this.balanceInit} euri`
     }
 
