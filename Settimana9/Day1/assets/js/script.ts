@@ -5,9 +5,9 @@ let randomNumber = ():number => {
 
 console.log(randomNumber())
 
-let giocatore1 = randomNumber();
-let giocatore2 = randomNumber();
-let dado = randomNumber();
+let giocatore1:number = randomNumber();
+let giocatore2:number = randomNumber();
+let dado:number = randomNumber();
 console.log(giocatore1, giocatore2, dado)
 
 
