@@ -70,8 +70,8 @@ secondUser.chiamata(22);
 secondUser.chiamata(45);
 console.log(`Numero chiamate: ${secondUser.getNumeroChiamate()}`);
 console.log(`Credito residuo: ${secondUser.numero404()} euri`);
+secondUser.azzeraChiamate();
 console.log(`Chiamate azzerate: ${secondUser.numeroChiamate}`);
-console.log(`Numero chiamate: ${secondUser.getNumeroChiamate()}`);
 console.log("");
 
 // Terzo utente
@@ -87,4 +87,5 @@ thirdUser.chiamata(8);
 console.log(`Numero chiamate: ${thirdUser.getNumeroChiamate()}`);
 console.log(`Credito residuo: ${thirdUser.numero404()} euri`);
 console.log(`Chiamate azzerate: ${thirdUser.numeroChiamate}`);
+thirdUser.azzeraChiamate();
 console.log(`Numero chiamate: ${thirdUser.getNumeroChiamate()}`);
