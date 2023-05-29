@@ -25,16 +25,13 @@ window.onload = () => {
         card += `
               <div class="col-md-4 col-sm-12 col-lg-3 mb-4">
               <div class="card mb-4 shadow-sm">
-              <img src="${product.imageUrl}" alt="">
-                <div class="card-body">Name:
-                  <h5 class="card-title"><span><br>
-                  ${product.name}
-                  </span></h5>
-                  <p class="card-text my-3">Brand:
-                  <span><br>
-                  ${product.brand}
-                  </span>
-                  </p>
+                <img src="${product.imageUrl}" alt="">
+                  <div class="card-body">Name:
+                    <h5 class="card-title"><span><br>
+                    ${product.name}
+                    </span></h5>
+                    <p class="card-text my-3">Brand:<span><br>${product.brand}</span></p>
+                  
                   <p class="card-text text-truncate my-1">Description:
                   <span> <br>
                   ${product.description}
