@@ -13,7 +13,7 @@ fetch(api)
         let card = "";
         data.forEach((product) => {
             card += `
-            <div class="cols-4">
+            <div class="row-cols-4">
         <div class="card shadow-sm">
         <img src="${product.images[0]}" alt="">
           <div class="card-body">Name:

@@ -2,10 +2,12 @@
 
 @import '~bootstrap/scss/bootstrap';
 
+*{
+  background-color: black;
+  margin-top: 2em;
+}
+
 p {
   color: red;
 }
 
-#contenitore{
-  margin: 0 45% auto;
-}
