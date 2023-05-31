@@ -1,0 +1,13 @@
+<!-- Post non attivi -->
+<div class="row mt-5">
+  <div class="col-3 mx-4" *ngFor="let post of posts">
+      <div class="card " *ngIf="!post.active">
+        <div class="card-body">
+          <h5 class="card-title">{{post.title}}</h5>
+          <p class="card-text">{{post.body}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
