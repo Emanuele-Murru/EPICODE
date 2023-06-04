@@ -13,13 +13,13 @@
 
     </div>
 
-    <div *ngIf="loading else loaded">
+    <div class="mt-5" *ngIf="loading else loaded">
       <h3>I'm loading the tasks</h3>
     </div>
 
     <ng-template #loaded>
 
-      <div *ngIf="this.toDoList.length === 0 else table" >
+      <div *ngIf="this.toDoList.length === 0 || checkCompletedTasks() else table" >
         <h3>Opps, there's no tasks to complete</h3>
       </div>
 

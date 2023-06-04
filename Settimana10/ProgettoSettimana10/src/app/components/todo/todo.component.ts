@@ -37,8 +37,8 @@ export class TodoComponent implements OnInit {
     }, 2000);
   }
 
-  checkCompleted(): boolean {
-    return this.toDoList.every((e) => e.completed === true);
+  checkCompletedTasks(): boolean {
+    return this.toDoList.every((task) => task.completed === true);
   }
 
   resetList() {
@@ -51,6 +51,6 @@ export class TodoComponent implements OnInit {
   completedTask(task: Todo): void {
     setTimeout(() => {
       this.TodoService.completedTask(task);
-    });
+    }, 2000);
   }
 }
