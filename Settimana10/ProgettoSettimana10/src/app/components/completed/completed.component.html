@@ -1,1 +1,56 @@
-<p>completed works!</p>
+<div class="container-fluid">
+
+  <div class="container">
+
+    <div *ngIf="loading else loaded">
+      <h3>I'm loading the tasks</h3>
+    </div>
+
+    <ng-template #loaded>
+
+    <table class="table table-dark table-hover mt-5">
+
+      <thead>
+
+        <tr>
+          <th scope="col">N°</th>
+          <th scope="col">Task</th>
+          <th scope="col">State</th>
+          <th scope="col">Edit</th>
+        </tr>
+
+      </thead>
+
+      <tbody *ngFor="let task of completedList">
+
+        <tr *ngIf="task.completed">
+
+          <th scope="row">{{ task.id }}</th>
+
+          <td><del> {{ task.title }} </del></td>
+
+          <td> Completed </td>
+
+          <td>
+            <div class="d-flex justify-content-center">
+
+              <div class="ms-2">
+                <button class="btn btn-md btn-danger rounded-pill" (click)="eliminateTask(task)">
+                  <i class="bi bi-trash3-fill"></i>
+                </button>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <button class="btn btn-outline-danger mt-5" type="button" (click)="resetList()">
+      Reset list
+    </button>
+
+    </ng-template>
+
+  </div>
+</div>

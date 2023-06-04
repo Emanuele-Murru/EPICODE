@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Route, RouterModule } from '@angular/router';
 
@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { CompletedComponent } from './components/completed/completed.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 
 const routes: Route[] = [
@@ -30,7 +31,8 @@ const routes: Route[] = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

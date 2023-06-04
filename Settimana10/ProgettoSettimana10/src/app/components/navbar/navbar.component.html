@@ -1,8 +1,13 @@
-<div class="containerNavbar">
+<nav class="containerNavbar">
+  <h2>
+    <a class="nav-link active" aria-current="page" [routerLink]="['/']"  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+      To-do list
+    </a>
+  </h2>
 
-  <a aria-current="page" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> To-do
-    list </a>
-
-  <a [routerLink]="['/completed_tasks']" routerLinkActive="router-link-active"> Completed Tasks </a>
-
-</div>
+  <h2>
+    <a class="nav-link" [routerLink]="['/completed_tasks']" routerLinkActive="router-link-active">
+      Completed Tasks
+    </a>
+  </h2>
+</nav>
