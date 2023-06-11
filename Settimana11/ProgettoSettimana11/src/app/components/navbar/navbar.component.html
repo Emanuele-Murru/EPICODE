@@ -1,0 +1,100 @@
+<nav class="navbar navbar-expand-lg">
+
+  <div class="container">
+
+    <img src="../../../assets/img/Logo.png" alt="website logo">
+
+    <!-- Dropdown button per basse risoluzioni -->
+    <button id="hamburger" class="navbar-toggler ml'auto" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon">
+
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'>
+          <path stroke='rgb(000, 000, 000)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1'
+            d='M4 7h22M4 15h22M4 23h22' />
+        </svg>
+
+      </span>
+
+    </button>
+
+    <div class="collapse navbar-collapse">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+
+          <a class="nav-link text-white" [routerLink]="['/movies']" role="button" aria-expanded="false">
+            Animes
+          </a>
+
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <!-- NOTIFICATIONS AND PROFILE ICONS -->
+
+      <div class="d-flex align-items-center">
+        <!--notification-->
+        <button type="button" id="bg_bell" class="btn rounded-circle mx-3 text-white">
+          <i class="bi bi-bell campanella"></i>
+        </button>
+
+        <!--profile-->
+        <div class="position-relative">
+
+          <img type="button" data-bs-toggle="dropdown" class="rounded-circle" id="avatarLogo"
+            src="../../../assets/img/logo-minimal-naruto.jpg" alt="AvatarUser" data-bs-toggle="dropdown"
+            data-bs-display="static" aria-expanded="false">
+
+          <ul class="dropdown-menu dropdown-menu-end position-absolute">
+            <li class="d-flex">
+
+              <img type="button" class="rounded-circle mx-3" style="object-fit: cover; width: 3em"
+                src="../../../assets/img/logo-minimal-naruto.jpg" alt="AvatarUser">
+
+              <div class="me-2">
+                <p class="m-0">Emanuele</p>
+                <p class="m-0 grey">manu@manu.com</p>
+              </div>
+
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-star me-2"></i>Subscription</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li> <button class="dropdown-item" (click)="logOut()"> <i class="bi bi-power me-2"></i> Logout</button> </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</nav>
