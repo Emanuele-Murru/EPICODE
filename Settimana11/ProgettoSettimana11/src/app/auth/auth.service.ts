@@ -70,7 +70,7 @@ export class AuthService {
         email: string;
         password: string;
     }) {
-        return this.http.post('localhost:4201', data);
+        return this.http.post(`${this.baseURL}register`, data);
     }
 
     logout() {
