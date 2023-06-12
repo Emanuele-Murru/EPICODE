@@ -71,9 +71,9 @@
               <img type="button" class="rounded-circle mx-3" style="object-fit: cover; width: 3em"
                 src="../../../assets/img/logo-minimal-naruto.jpg" alt="AvatarUser">
 
-              <div class="me-2">
-                <p class="m-0">Emanuele</p>
-                <p class="m-0 grey">manu@manu.com</p>
+              <div class="me-2"  *ngIf="user">
+                <p class="m-0">{{user.user.nome && user.user.cognome}}</p>
+                <p class="m-0 grey">{{user.user.email}}</p>
               </div>
 
             </li>
@@ -82,9 +82,11 @@
               <hr class="dropdown-divider">
             </li>
 
-            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/profile']"><i class="bi bi-person me-2"></i>Profile</a></li>
+
             <li><a class="dropdown-item" href="#"><i class="bi bi-star me-2"></i>Subscription</a></li>
             <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+
             <li>
               <hr class="dropdown-divider">
             </li>

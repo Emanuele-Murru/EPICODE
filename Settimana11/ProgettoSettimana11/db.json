@@ -33,6 +33,16 @@
       "email": "luca@lucaluca.it",
       "password": "$2a$10$Hb0xEVGIAi9kkLg77lccbu4hnd1GLlqiIZCKZnhJ4dIlNMoRinJUm",
       "id": 6
+    },
+    {
+      "email": "manu@manumanu.com",
+      "password": "$2a$10$QbOiFd7f9sDFOYeWLQuaR.Vr.A5ceRB/fUufJI5Z8Y4jw/TzQEC02",
+      "id": 7
+    },
+    {
+      "email": "ciao@ciaociao.it",
+      "password": "$2a$10$NkPy4fx2lsisoT7h4H8ufeYdM.7h3vCAVR2GMwKrwdNbugifWBmnK",
+      "id": 8
     }
   ],
   "favorites": [
