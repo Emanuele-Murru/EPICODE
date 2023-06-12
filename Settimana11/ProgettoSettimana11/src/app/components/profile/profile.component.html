@@ -1,15 +1,16 @@
 <app-navbar></app-navbar>
 
-<div class="container-fluid m-5">
+  <div class="container-fluid background">
 
-  <div class="container" *ngIf="user">
+    <div class="container" *ngIf="user">
 
-    <div class="card bg-danger">
-      <h3>Nome: {{user.user.nome}}</h3>
-      <h3>Cognome: {{user.user.cognome}}</h3>
-      <h3>Email: {{user.user.email}}</h3>
+      <div class="card">
+        <h3>Nome: {{user.user.nome}}</h3>
+        <h3>Cognome: {{user.user.cognome}}</h3>
+        <h3>Email: {{user.user.email}}</h3>
+      </div>
+
     </div>
 
   </div>
 
-</div>

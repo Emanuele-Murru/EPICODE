@@ -1,48 +1,25 @@
 {
   "users": [
     {
-      "email": "n@p.com",
-      "password": "$2a$10$SmgrR2x18eeoJMFtk9N9FORmSTDG0ToOtqOS0Ik0jgiRWoAqe7sT2",
-      "name": "nicola toledo",
-      "id": 1
-    },
-    {
-      "email": "dario@dario.com",
-      "password": "$2a$10$ZLY63quWnMVo0lO951uFdOJRfUxeo8U6YJ/Cue06Vgp4Ad8S/CjaC",
-      "name": "Dario",
-      "id": 2
-    },
-    {
-      "email": "mario@rossi.com",
-      "password": "$2a$10$RsIosJKYgHyT8uo.bosI5uYpN0PVmA6xdnhjT4jIFcbKbVS2RsiRC",
-      "name": "Mario Rossi",
-      "id": 3
-    },
-    {
-      "email": "luca@iannice.gov",
-      "password": "$2a$10$5w60AiRs216q6mE4yxS5geckgGmD93VpzJP72A07rLlWL0bEH8mgO",
-      "name": "Luca Iannice",
-      "id": 4
-    },
-    {
-      "email": "manu@manu.com",
-      "password": "$2a$10$mYUFjqfwOo2pB7uiP4t5hOLT0d5zowrg4nG6QfplBb8oi6LPSOy2K",
-      "id": 5
-    },
-    {
-      "email": "luca@lucaluca.it",
-      "password": "$2a$10$Hb0xEVGIAi9kkLg77lccbu4hnd1GLlqiIZCKZnhJ4dIlNMoRinJUm",
-      "id": 6
-    },
-    {
-      "email": "manu@manumanu.com",
-      "password": "$2a$10$QbOiFd7f9sDFOYeWLQuaR.Vr.A5ceRB/fUufJI5Z8Y4jw/TzQEC02",
-      "id": 7
-    },
-    {
-      "email": "ciao@ciaociao.it",
-      "password": "$2a$10$NkPy4fx2lsisoT7h4H8ufeYdM.7h3vCAVR2GMwKrwdNbugifWBmnK",
+      "email": "Emanuele@manu.com",
+      "password": "$2a$10$wqu9EK4NWEszPXTGWkRV3ubXKVeRIJZKuo1TGg3CQKTkX/8pUuerq",
+      "nome": "Emanuele",
+      "cognome": "Murru",
       "id": 8
+    },
+    {
+      "email": "Prova@prova1.com",
+      "password": "$2a$10$dzXO9tjEP9vR.U2.bJp1ROLdZQq5f9lZ7MVuvAWj.D9bZzkwcSZgu",
+      "nome": "Prova",
+      "cognome": "Prova1",
+      "id": 9
+    },
+    {
+      "email": "ciao@ciao.com",
+      "password": "$2a$10$Z/F/WyAWjpb.g80/oHZUlerSYHM.eYP6y1zE/EINLYSzd.tjqr9om",
+      "nome": "ciao",
+      "cognome": "ciao",
+      "id": 10
     }
   ],
   "favorites": [
@@ -105,6 +82,11 @@
       "userId": 4,
       "movieId": 615457,
       "id": 16
+    },
+    {
+      "userId": 13,
+      "movieId": 527774,
+      "id": 17
     }
   ],
   "genres": [

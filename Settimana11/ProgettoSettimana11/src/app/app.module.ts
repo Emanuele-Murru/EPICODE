@@ -15,7 +15,7 @@ import { AuthGuard } from './auth/auth.guard';
 
 const rotte: Route[] = [
   {
-    path: 'login',
+    path: '',
     component: LoginComponent
   },
   {

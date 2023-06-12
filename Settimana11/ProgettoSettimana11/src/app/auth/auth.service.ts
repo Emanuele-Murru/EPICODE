@@ -10,6 +10,7 @@ import { Router } from '@angular/router'; // Utilizzato per reindirizzare ad alt
 @Injectable({
     providedIn: 'root',
 })
+
 export class AuthService {
     jwtHelper = new JwtHelperService(); // Serve per leggere e validare il token
     baseURL = environment.baseURL;
@@ -21,64 +22,37 @@ export class AuthService {
 
     constructor(private http: HttpClient, private router: Router) {}
 
-///////METODO AGGIUNTO VENERDI
-    getCurrentUserId(): number | null {
-      const user = localStorage.getItem('user');
-      if (user) {
-        const userData: AuthData = JSON.parse(user);
-        return userData.user.id; // Sostituisci 'id' con il nome corretto del campo che contiene l'ID dell'utente nei dati dell'utente
-      }
-      return null;
-    }
-
     login(data: { email: string; password: string }) {
         return this.http.post<AuthData>(`${this.baseURL}login`, data).pipe(
             // Il login è una POST e non una GET perché deve scrivere il token
             tap((data) => {
-                console.log(data);
                 const timestamp = new Date().getTime(); // Ottieni il timestamp corrente
             data.timestamp = timestamp;
-            console.log(timestamp);
                 this.authSubj.next(data); // Il BehaviourSubject riceve i dati del login per poi passarli alla proprietà user$
                 this.utente = data;
-                console.log(this.utente);
                 localStorage.setItem('user', JSON.stringify(data)); // Il localStorage memorizza l'oggetto utente completo di token
+                console.log(data);
+
                 this.autoLogout(data);
             }),
             catchError(this.errors)
         );
     }
 
-    restore() {
-        // Utilizzato nel caso l'applicazione venga abbandonata senza effettuare il logout e poi venga riaperta con il token ancora valido
-        const user = localStorage.getItem('user');
-        if (!user) {
-            return;
-        }
-        const userData: AuthData = JSON.parse(user);
-        if (this.jwtHelper.isTokenExpired(userData.accessToken)) {
-            // Consente di leggere il token, nello specifico data e ora di scadenza
-            return;
-        }
-        this.authSubj.next(userData); // Rientrando nell'applicazione, il BehaviourSubject è di nuovo null (vedi riga 16), di conseguenza riceve i valori presenti nel localStorage, letti dalla variabile user e parsati nella variabile useData
-        this.autoLogout(userData);
-    }
-
     signup(data: {
-        nome: string;
-        cognome: string;
-        email: string;
-        password: string;
+      nome: string;
+      cognome: string;
+      email: string;
+      password: string;
     }) {
-        return this.http.post(`${this.baseURL}register`, data);
+      return this.http.post(`${this.baseURL}register`, data);
     }
 
     logout() {
-        this.authSubj.next(null); // Svuota il BehaviourSubject risportandolo a nulla, e quindi la proprietà user$ ritorna null
+        this.authSubj.next(null); // Svuota il BehaviourSubject riportandolo a nulla, e quindi la proprietà user$ ritorna null
         localStorage.removeItem('user');
-        this.router.navigate(['/login']); // Reindirizzamento alla home a seguito del logout
+        this.router.navigate(['/']); // Reindirizzamento alla home a seguito del logout
         if (this.timeoutLogout) {
-            // Se non è passato il tempo della scadenza del token (vedi riga 67 setTimeout) in caso di abbandono dell'applicazione senza aver effettuato il logout, il metodo cancella il setTimeout per far ripartire il counter
             clearTimeout(this.timeoutLogout);
         }
     }

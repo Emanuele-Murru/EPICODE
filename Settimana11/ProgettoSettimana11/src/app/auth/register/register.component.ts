@@ -8,7 +8,9 @@ import { NgForm } from '@angular/forms';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
 })
+
 export class RegisterComponent implements OnInit {
+
   isLoading = false;
 
   constructor(private authSrv: AuthService, private router: Router) {}
@@ -16,19 +18,29 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {}
 
   registra(form: NgForm) {
-    this.isLoading = true;
-    console.log(form.value);
+
+    this.isLoading = true
+
     try {
+
       this.authSrv.signup(form.value).subscribe();
-      this.router.navigate(['/login']);
+      this.router.navigate(['/']);
       this.isLoading = false;
+
     } catch (error: any) {
+
       console.error(error);
+
       if (error.status == 400) {
+
         alert('Email già registrata!');
         this.router.navigate(['/register']);
+
       }
+
       this.isLoading = false;
+
     }
+
   }
 }

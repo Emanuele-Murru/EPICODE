@@ -13,6 +13,7 @@ import { map, take } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root',
 })
+
 export class AuthGuard implements CanActivate {
 
   constructor(private autSrv: AuthService, private router: Router) {}
@@ -25,16 +26,14 @@ export class AuthGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    return this.autSrv.user$.pipe(
-      take(1),
-      map((user) => {
+    return this.autSrv.user$.pipe(take(1), map((user) => {
         if (user) {
           return true;
         }
         alert(
           'Per visualizzare questa risorsa devi essere loggato!\nAccedi o registrati'
         );
-        return this.router.createUrlTree(['/login']);
+        return this.router.createUrlTree(['/']);
       })
     );
   }
