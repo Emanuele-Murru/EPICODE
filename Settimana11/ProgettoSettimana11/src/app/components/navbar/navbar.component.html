@@ -12,8 +12,10 @@
       <span class="navbar-toggler-icon">
 
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'>
+
           <path stroke='rgb(000, 000, 000)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1'
             d='M4 7h22M4 15h22M4 23h22' />
+
         </svg>
 
       </span>
@@ -38,13 +40,8 @@
             Categories
           </a>
 
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <ul class="dropdown-menu background">
+            <li><a class="dropdown-item text-white" *ngFor="let genere of genres">{{genere.name}}</a></li>
           </ul>
         </li>
 
@@ -54,18 +51,18 @@
 
       <div class="d-flex align-items-center">
         <!--notification-->
-        <button type="button" id="bg_bell" class="btn rounded-circle mx-3 text-white">
-          <i class="bi bi-bell campanella"></i>
+        <button type="button" class="btn rounded-circle mx-3">
+          <i class="bi bi-heart-fill text-danger fs-3"></i>
         </button>
 
         <!--profile-->
         <div class="position-relative">
 
           <img type="button" data-bs-toggle="dropdown" class="rounded-circle" id="avatarLogo"
-            src="../../../assets/img/User.png" alt="AvatarUser" data-bs-toggle="dropdown"
+            src="../../../assets/img/User.png" alt="Avatar User" data-bs-toggle="dropdown"
             data-bs-display="static" aria-expanded="false">
 
-          <ul class="dropdown-menu dropdown-menu-end position-absolute">
+          <ul class="dropdown-menu dropdown-menu-end position-absolute background text-white">
             <li class="d-flex">
 
               <img type="button" class="rounded-circle mx-3" style="object-fit: cover; width: 3em"
@@ -82,16 +79,16 @@
               <hr class="dropdown-divider">
             </li>
 
-            <li><a class="dropdown-item" [routerLink]="['/profile']"><i class="bi bi-person me-2"></i>Profile</a></li>
+            <li><a class="dropdown-item text-white" [routerLink]="['/profile']"><i class="bi bi-person me-2"></i>Profile</a></li>
 
-            <li><a class="dropdown-item" href="#"><i class="bi bi-star me-2"></i>Subscription</a></li>
-            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+            <li><a class="dropdown-item text-white" href="#"><i class="bi bi-star me-2"></i>Subscription</a></li>
+            <li><a class="dropdown-item text-white" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
 
             <li>
               <hr class="dropdown-divider">
             </li>
 
-            <li> <button class="dropdown-item" (click)="logOut()"> <i class="bi bi-power me-2"></i> Logout</button> </li>
+            <li> <button class="dropdown-item text-white" (click)="logOut()"> <i class="bi bi-power me-2"></i> Logout</button> </li>
           </ul>
         </div>
 

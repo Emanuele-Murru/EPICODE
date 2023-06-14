@@ -1,0 +1,25 @@
+.bgWallpaper {
+  background-image: url(../../../assets/img/Zoom_InfoHime_532a2eb6-1320-49a0-8520-730388c9143f.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  background: rgb(243, 121, 33);
+  background: linear-gradient(157deg, rgb(243, 121, 33) 47%, rgb(45, 189, 186) 73%);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.bottomSection {
+  font-size: 1rem;
+  padding: 16px 20px 16px 28px;
+  color: white;
+}
+
+.bottomSection a:hover {
+  color: #005ce6;
+  text-decoration: underline;
+}/*# sourceMappingURL=register.component.css.map */

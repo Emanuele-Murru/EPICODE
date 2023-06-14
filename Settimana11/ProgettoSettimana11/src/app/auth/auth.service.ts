@@ -68,6 +68,17 @@ export class AuthService {
         }, expirationMilliseconds);
     }
 
+    // removeAccount(account:  {
+    //   email: string,
+    //   password: string,
+    //   nome: string,
+    //   cognome: string,
+    //   id: number
+    // }) {
+    //   this.http.delete<AuthData>(`${this.baseURL}users`, account).subscribe()
+    //   localStorage.removeItem('user');
+    // }
+
     private errors(err: any) {
         switch (err.error) {
             case 'Email already exists':

@@ -5,89 +5,10 @@
       "password": "$2a$10$wqu9EK4NWEszPXTGWkRV3ubXKVeRIJZKuo1TGg3CQKTkX/8pUuerq",
       "nome": "Emanuele",
       "cognome": "Murru",
-      "id": 8
-    },
-    {
-      "email": "Prova@prova1.com",
-      "password": "$2a$10$dzXO9tjEP9vR.U2.bJp1ROLdZQq5f9lZ7MVuvAWj.D9bZzkwcSZgu",
-      "nome": "Prova",
-      "cognome": "Prova1",
-      "id": 9
-    },
-    {
-      "email": "ciao@ciao.com",
-      "password": "$2a$10$Z/F/WyAWjpb.g80/oHZUlerSYHM.eYP6y1zE/EINLYSzd.tjqr9om",
-      "nome": "ciao",
-      "cognome": "ciao",
-      "id": 10
+      "id": 0
     }
   ],
   "favorites": [
-    {
-      "movieId": 578701,
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "movieId": 460465,
-      "id": 5
-    },
-    {
-      "userId": 2,
-      "movieId": 460465,
-      "id": 6
-    },
-    {
-      "userId": 2,
-      "movieId": 632357,
-      "id": 8
-    },
-    {
-      "userId": 3,
-      "movieId": 804435,
-      "id": 9
-    },
-    {
-      "userId": 3,
-      "movieId": 399566,
-      "id": 10
-    },
-    {
-      "userId": 4,
-      "movieId": 813258,
-      "id": 11
-    },
-    {
-      "userId": 4,
-      "movieId": 823855,
-      "id": 12
-    },
-    {
-      "userId": null,
-      "movieId": 527774,
-      "id": 13
-    },
-    {
-      "userId": null,
-      "movieId": 635302,
-      "id": 14
-    },
-    {
-      "userId": 4,
-      "movieId": 567189,
-      "id": 15
-    },
-    {
-      "userId": 4,
-      "movieId": 615457,
-      "id": 16
-    },
-    {
-      "userId": 13,
-      "movieId": 527774,
-      "id": 17
-    }
   ],
   "genres": [
     {
@@ -258,7 +179,7 @@
       "id": 804435,
       "original_language": "en",
       "original_title": "Vanquish",
-      "overview": "",
+      "overview": "Una giovane madre, Victoria (Ruby Rose), dopo un passato difficile da corriere della droga, sta cercando di lasciarsi tutto alle spalle per vivere la sua nuova vita con sua figlia. Ad impedirglielo sarà Damon (Morgan Freeman), poliziotto in pensione che rapisce la figlia di Victoria, obbligando così la donna ad eseguire ogni suo ordine. L’obbiettivo di Damon è quello di eliminare la sua ex squadra di poliziotti corrotti per ripulire la città. Per farlo, Victoria si arma di pistole, coraggio e della sua motocicletta per buttarsi in una serie di scontri all’ultimo sangue con violenti criminali. Se fallirà, Victoria non potrà mai più rivedere sua figlia.",
       "popularity": 1583.635,
       "poster_path": "/1jkNM1NHyHsxiBBuOlOeqgmidM0.jpg",
       "release_date": "2021-04-16",
@@ -316,7 +237,7 @@
       "id": 573680,
       "original_language": "en",
       "original_title": "The Banishing",
-      "overview": "",
+      "overview": "Shudder è una piattaforma dedicata all'horror, purtroppo non ancora disponibile nel nostro paese. Tra le sue nuove produzioni c'è anche questo film britannico The Banishing, sulla 'storia vera della casa più infestata d'Inghilterra',diretto dallo specialista Christopher Smith e con un cast in cui riconosciamo volti molto noti, di cui è appena uscito il trailer. Nella storia, un giovane reverendo con moglie e figlia si trasferisce in un castello che nasconde oscuri segreti. Quando uno spirito vendicativo perseguita la bambina e minaccia di distruggere la famiglia, il reverendo e la moglie sono costretti ad affrontare le loro convinzioni. Devono rivolgersi alla magia nera e cercare l'aiuto di un famoso occultista, o rischiare di perdere la figlia.",
       "popularity": 1382.464,
       "poster_path": "/xD9mc8JCVXA8T8u4Od7qOUBuGH4.jpg",
       "release_date": "2021-04-29",
@@ -336,7 +257,7 @@
       "id": 808023,
       "original_language": "en",
       "original_title": "The Virtuoso",
-      "overview": "",
+      "overview": "The Virtuoso, il film diretto da Nick Stagliano, segue la storia di un abile sicario professionista, The Virtuoso (Anson Mount), facente parte di un gruppo di assassini super esperti con a capo The Mentor (Anthony Hopkins). The Virtuoso, per saldare un vecchio debito che ha in sospeso con il suo mentore e capo, accetta un nuovo incarico: scovare e far fuori un collega di cui non conosce nome né volto. L'unico indizio che ha a disposizione è una parola in codice. The Virtuoso dovrà trovarsi in un preciso ristorante alle cinque in punto e scoprire quale è la persona da eliminare. I possibili bersagli del sicario sono tanti, incluso il vice sceriffo del posto. La caccia all’uomo si fa ancora più complicata quando entra in scena un'enigmatica cameriera (Abbie Cornish) dal passato misterioso e dal fascino irresistibile.",
       "popularity": 1423.673,
       "poster_path": "/vXHzO26mJaOt4VO7ZFiM6No5ScT.jpg",
       "release_date": "2021-04-30",
@@ -483,7 +404,7 @@
       "id": 726684,
       "original_language": "fr",
       "original_title": "Miraculous World : Shanghai, la légende de Ladydragon",
-      "overview": "",
+      "overview": "Dopo aver scoperto che Adrien è in viaggio per Shanghai insieme al padre per lavoro, Marinette convince i suoi genitori a far partire anche lei per la Cina con la scusa di andare a trovare suo pro zio Wang Cheng Shifu in occasione del suo 60º compleanno. Quest'ultimo accoglie con gioia la nipote al suo arrivo, raccontadole un po' della sua famiglia cinese. Intanto la vera ragione per cui Gabriel Agreste si trova a Shanghai è per trovare il Prodigious, un gioiello magico e più potente dei Miraculous che cerca da ormai 15 anni. L'uomo da cui Gabriel ha acquistato il braccialetto in grado di aprire la porta della Caverna Sacra dove è custodito il Prodigious è un commerciante del mercato nero chiamato Cash, che sta costringendo alla vita da borseggiatrice la giovane Fei, figlia adottiva del defunto Wu Shifu, il quale era il custode del segreto della Caverna Sacra e che aveva affidato il braccialetto a Fei per renderla la sua successore. La ragazza non sa che è stato Cash a rubarle il bracciale e ad appiccare l'incendio che ha distrutto la scuola di kung fu e causato la morte del padre, ed ora lei cerca di trovare soldi per ottenere risposte da lui. Mentre è in giro per Shanghai per trovare Adrien, Marinette viene derubata senza accorgesene da Fei, che la priva dei suoi beni, incluso il suo Miraculous, e una volta accorta del furto si perde nella grande città. Adrien viene a sapere da Wang che anche la sua compagna di classe si trova lì, e si mette a cercarla nei panni di Chat Noir. Non avendo guadagnato niente da Cash nel dare ciò che ha rubato a Marinette, Fei la incontra di nuovo e finisce per far amicizia con lei, restituendole i suoi orecchini. Le due vengono inseguite prima dagli scagnozzi di Cash, e poi vengono ritrovate da lui davanti alla Caverna Sacra, il quale pretende ancora soldi. Gabriel, arrivato di nascosto sente la sua avidità, e quindi si trasforma e akumizza l'uomo in King Cash come modo per impadronirsi del Prodigious. A guardia di tale gioiello vi è il magico guardiano Mei Shi. Ladybug chiama Chat Noir e con l'aiuto di Fei, che entra in possesso del Prodigious trasformandosi con l'aiuto dei Rellings in Ladydragon, deakumizzano Cash. Non volendo perdere, Papillon akumizza Mei Shi e lo trasforma in YanLuoShi, ma egli è talmente potente e feroce che disintegra prima lo stesso Papillon, e poi Chat Noir. Ladybug e Ladydragon collaborano per salvare Shanghai dalla furia del supercattivo, riuscendo a sconfiggerlo e invertire i danni da lui commessi. Mei Shi ritiene Fei adatta per tenere il Prodigious, e decide di vegliare su di lei, mentre la ragazza conduce Cash alla giustizia dopo aver scoperto ciò che ha fatto a lei e a suo padre. Marinette, Adrien e Fei si ritrovano insieme per festeggiare il compleanno di Wang Cheng. ",
       "popularity": 1019.449,
       "poster_path": "/tf9nWFyJ745mBFkXZtPWabDYBR3.jpg",
       "release_date": "2021-04-04",
@@ -522,11 +443,11 @@
       "id": 586047,
       "original_language": "ko",
       "original_title": "서복",
-      "overview": "",
+      "overview": "Min Ki Hun, agente segreto malato di cancro, deve garantire la sicurezza del primo clone umano Seobok, il cui codice genetico contiene il segreto della vita eterna. Un potere straordinario che è il bersaglio di ogni tipo di cupidigia.",
       "popularity": 1105.265,
       "poster_path": "/xdrFKWpUx2JjK7BeUJGA5iaI5rA.jpg",
       "release_date": "2021-04-12",
-      "title": "서복",
+      "title": "The Clone - Chiave per l'immortalità",
       "video": false,
       "vote_average": 8,
       "vote_count": 46
@@ -562,7 +483,7 @@
       "id": 634528,
       "original_language": "en",
       "original_title": "The Marksman",
-      "overview": "",
+      "overview": "Jim Hanson, allevatore e veterano della guerra del Vietnam, sta attraversando un momento difficile. Vive in Arizona lungo il confine tra Stati Uniti e Messico, ha perso la moglie per colpa del cancro e la banca sta per ipotecare la sua proprietà.",
       "popularity": 721.108,
       "poster_path": "/6vcDalR50RWa309vBH1NLmG2rjQ.jpg",
       "release_date": "2021-01-15",

@@ -1,12 +1,13 @@
-nav {
-
   #avatarLogo {
     width: 30px;
     height: 30px;
     object-fit: cover;
   }
-}
 
 .background {
-  background-color: orangered !important;
+  background-color: orangered;
+}
+
+li {
+  cursor: pointer;
 }

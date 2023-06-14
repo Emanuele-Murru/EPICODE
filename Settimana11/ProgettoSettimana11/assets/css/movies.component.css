@@ -1,12 +1,13 @@
 .card {
   background-color: #d85307;
-  border: 1px solid rgb(45, 189, 186, 1);
+  border: 1px solid rgb(45, 189, 186);
   cursor: pointer;
 }
+
 .favOn {
   color: red;
 }
 
 .favOff {
   color: transparent;
-}
+}/*# sourceMappingURL=movies.component.css.map */

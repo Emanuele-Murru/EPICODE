@@ -1,0 +1,31 @@
+.bgWallpaper {
+  background-image: url(../../../assets/img/Crucnhyroll.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  max-width: 350px;
+  background: #474c51;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+.form-section {
+  padding: 16px 20px 16px 28px;
+  font-size: 1rem;
+}
+
+.form-section a:hover {
+  color: #005ce6;
+  text-decoration: underline;
+}/*# sourceMappingURL=login.component.css.map */
