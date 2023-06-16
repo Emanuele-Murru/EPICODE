@@ -6,6 +6,7 @@ import { tap, catchError } from 'rxjs/operators'; // Operatore utilizzato per ma
 import { AuthData } from './auth-data.interface';
 import { environment } from 'src/environments/environment';
 import { Router } from '@angular/router'; // Utilizzato per reindirizzare ad altra pagina dopo il logout
+import { User } from '../models/user';
 
 @Injectable({
     providedIn: 'root',
@@ -68,16 +69,11 @@ export class AuthService {
         }, expirationMilliseconds);
     }
 
-    // removeAccount(account:  {
-    //   email: string,
-    //   password: string,
-    //   nome: string,
-    //   cognome: string,
-    //   id: number
-    // }) {
-    //   this.http.delete<AuthData>(`${this.baseURL}users`, account).subscribe()
-    //   localStorage.removeItem('user');
-    // }
+    removeAccount(userId: number) {
+      localStorage.removeItem('user');
+      return this.http.delete(`${this.baseURL}users/${userId}`);
+    }
+
 
     recuperaUserId():number | null {
       const recuperoId = localStorage.getItem('user');

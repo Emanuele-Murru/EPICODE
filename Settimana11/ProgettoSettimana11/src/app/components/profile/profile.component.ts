@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthData } from 'src/app/auth/auth-data.interface';
 import { AuthService } from 'src/app/auth/auth.service';
 import { HttpClient } from '@angular/common/http';
+import { User } from 'src/app/models/user';
 
 @Component({
   selector: 'app-profile',
@@ -26,4 +27,10 @@ export class ProfileComponent implements OnInit {
     this.authService.logout();
   }
 
+  eliminaAccount(userId:number) {
+    this.authService.removeAccount(userId).subscribe(() => {
+      console.log("Account eliminato", userId);
+    });
+    this.authService.logout();
+  }
 }

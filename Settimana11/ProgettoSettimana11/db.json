@@ -1,15 +1,8 @@
 {
   "users": [
     {
-      "email": "Emanuele@manu.com",
-      "password": "$2a$10$wqu9EK4NWEszPXTGWkRV3ubXKVeRIJZKuo1TGg3CQKTkX/8pUuerq",
-      "nome": "Emanuele",
-      "cognome": "Murru",
-      "id": 0
-    },
-    {
       "email": "Emanuele@manumanu.com",
-      "password": "$2a$10$ZR/kdl0KCaoFLwW1QMlTauO70rzYwRq0WqWzFvz3D15CArb/hl5dC",
+      "password": "$2a$10$jLBeiCh4oW3iWEqqGT4.CuZTmf4ysG3HUpNh720KgrkUPFYKQUyC.",
       "nome": "Emanuele",
       "cognome": "Murru",
       "id": 1
@@ -18,43 +11,18 @@
   "favorites": [
     {
       "id": 1,
-      "userId": 0,
-      "movieId": 615457
-    },
-    {
-      "id": 2,
-      "userId": 0,
-      "movieId": 399566
-    },
-    {
-      "id": 3,
-      "userId": 0,
-      "movieId": 567189
-    },
-    {
-      "id": 4,
-      "userId": 0,
+      "userId": 1,
       "movieId": 632357
     },
     {
-      "id": 5,
+      "id": 2,
       "userId": 1,
       "movieId": 578701
     },
     {
-      "id": 6,
+      "id": 3,
       "userId": 1,
       "movieId": 399566
-    },
-    {
-      "id": 7,
-      "userId": 1,
-      "movieId": 635302
-    },
-    {
-      "id": 8,
-      "userId": 1,
-      "movieId": 823855
     }
   ],
   "genres": [
