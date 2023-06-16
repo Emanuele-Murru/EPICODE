@@ -4,9 +4,6 @@ import { Movie } from 'src/app/models/movie';
 import { environment } from 'src/environments/environment';
 import { Genres } from '../models/genres.interface';
 import { Favorites } from '../models/favorites.favorites';
-import { AuthGuard } from '../auth/auth.guard';
-import { User } from '../models/user';
-import { AuthData } from '../auth/auth-data.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -19,24 +16,26 @@ export class MovieService {
 
   recuperaFilms() {
     return this.http.get<Movie[]>('http://localhost:4201/movies-popular');
-  }
+  };
 
   recuperaGeneri() {
-    return this.http.get<Genres[]>(`${this.baseUrl}genres`)
+    return this.http.get<Genres[]>(`${this.baseUrl}genres`);
+  };
+
+  recuperaFavorites(userId: number) {
+    return this.http.get<Favorites[]>(`${this.baseUrl}favorites?userId=${userId}`);
+  };
+
+  addFav(favorite: Favorites) {
+    return this.http.post<Favorites>(`${this.baseUrl}favorites`, favorite)
   }
 
-  favorites() {
-    return this.http.get<Favorites[]>(`${this.baseUrl}favorites`)
+  removefav(favoriteId:number) {
+    return this.http.delete(`${this.baseUrl}favorites/${favoriteId}`);
+  };
+
+  recuperaFilmById(id: number) {
+    return this.http.get<Movie[]>(`http://localhost:4201/movies-popular/${id}`);
   }
 
-  recuperaUserId():number | null {
-    const recuperoId = localStorage.getItem('users');
-    if (recuperoId) {
-      const datiUser: AuthData = JSON.parse(recuperoId);
-      return datiUser.user.id
-    } else {
-      alert("Non esiste alcun profilo");
-      return null
-    }
-  }
 }

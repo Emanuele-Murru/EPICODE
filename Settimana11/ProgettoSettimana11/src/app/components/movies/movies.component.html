@@ -20,10 +20,10 @@
               <p class="card-text text-truncate">{{ movie.overview }}</p>
               <p class="text-black">Language: {{ movie.original_language.toUpperCase() }}</p>
 
-              <!--<button class="btn" *ngIf="favorites" [ngClass]="{
-                'favOn': favorites,
-                'favOff': !favorites,
-              }"> <i class="bi bi-star-fill fs-4"></i> </button> -->
+              <button class="btn" type="button" (click)="isFavorite(movie) ? rimuoviFavorite(movie) : aggiungiFavorite(movie)" [class.favOn]="isFavorite(movie)"
+              [class.favOff]="!isFavorite(movie)"> <i class="bi bi-star-fill fs-4"></i> </button>
+
+              <a routerLink="/detailPage" type="button" class="btn btn-primary">See more</a>
 
             </div>
 

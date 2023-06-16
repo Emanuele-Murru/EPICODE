@@ -37,8 +37,11 @@ export class NavbarComponent implements OnInit {
 
   }
 
-
   logOut() {
     this.authSrv.logout();
   }
+
+  // showCategory(genreId) {
+  //   genre
+  // }
 }

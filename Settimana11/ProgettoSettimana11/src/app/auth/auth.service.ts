@@ -79,6 +79,17 @@ export class AuthService {
     //   localStorage.removeItem('user');
     // }
 
+    recuperaUserId():number | null {
+      const recuperoId = localStorage.getItem('user');
+      if (recuperoId) {
+        const datiUser: AuthData = JSON.parse(recuperoId);
+        return datiUser.user.id
+      } else {
+        console.log("Nessun id trovatoE tu, tra una difficolta' e l'altra ce l'hai fatta da sola, quindi quando ti senti insicura ricordati che hai il pot");
+        return null
+      };
+    };
+
     private errors(err: any) {
         switch (err.error) {
             case 'Email already exists':
