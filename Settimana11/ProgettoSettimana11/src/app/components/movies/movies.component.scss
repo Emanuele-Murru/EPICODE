@@ -2,6 +2,9 @@
   background-color: #d85307;
   border: 1px solid rgb(45, 189, 186, 1);
   cursor: pointer;
+  img{
+    max-height: 400px;
+  }
 }
 .favOn {
   color: yellow;

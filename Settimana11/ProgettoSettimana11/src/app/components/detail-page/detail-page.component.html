@@ -1,0 +1,40 @@
+<div class="container-fluid background">
+
+  <div class="container">
+
+    <div class="m-auto" *ngIf="movie">
+
+      <div class="card bg-dark">
+
+        <div class="h100 background d-flex flex-column justify-content-center align-items-center">
+
+          <h1 class="mt-5">{{movie.title}}</h1>
+
+          <div class="mt-5">
+            <img class="card-img-top" src="http://image.tmdb.org/t/p/w500{{ movie.poster_path }}"
+              alt="film cover photo">
+          </div>
+
+          <div class="card-body mt-5">
+
+            <h4 class="mb-5"> <p class="text-warning">Description:</p> {{movie.overview}} </h4>
+
+            <h4 class="mb-5"> <span class="text-warning">Release Date:</span> {{movie.release_date}} </h4>
+
+            <h4 class="mb-5"> <span class="text-warning">Vote:</span> {{movie.vote_average}} </h4>
+
+            <h4 class="mb-5"> <span class="text-warning">Popularity:</span> {{movie.popularity}} views</h4>
+
+            <h4 class="mb-5"> <span class="text-warning">Original language:</span> {{movie.original_language}} </h4>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn btn-lg btn-primary" type="button" routerLink="/movies">Go back to Movies</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

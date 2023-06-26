@@ -18,6 +18,11 @@ export class MovieService {
     return this.http.get<Movie[]>('http://localhost:4201/movies-popular');
   };
 
+  // Questo metodo ritorna il singolo film per la Detail Page
+  recuperaFilm(movieId:number){
+    return this.http.get<Movie[]>(`${this.baseUrl}movies-popular/${movieId}`)
+  }
+
   recuperaGeneri() {
     return this.http.get<Genres[]>(`${this.baseUrl}genres`);
   };
@@ -33,9 +38,4 @@ export class MovieService {
   removefav(favoriteId:number) {
     return this.http.delete(`${this.baseUrl}favorites/${favoriteId}`);
   };
-
-  recuperaFilmById(id: number) {
-    return this.http.get<Movie[]>(`http://localhost:4201/movies-popular/${id}`);
-  }
-
 }

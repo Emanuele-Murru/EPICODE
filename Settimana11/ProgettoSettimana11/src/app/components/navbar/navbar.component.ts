@@ -13,9 +13,10 @@ import { MovieService } from 'src/app/Services/movie.service';
 })
 export class NavbarComponent implements OnInit {
 
-  user: AuthData | null = null;
-  genres: Genres[] | null = null;
   baseUrl = environment.baseURL;
+  user: AuthData | null = null;
+  genres: Genres[] = [];
+  moviesByGenre: any[] = [];
 
   constructor(
     private authSrv: AuthService,
@@ -41,7 +42,8 @@ export class NavbarComponent implements OnInit {
     this.authSrv.logout();
   }
 
-  // showCategory(genreId) {
-  //   genre
-  // }
+  getMoviesByGenre(genreId: number) {
+    this.moviesByGenre = this.movies.filter(movie => movie.genre_ids.includes(genreId));
+  }
+
 }

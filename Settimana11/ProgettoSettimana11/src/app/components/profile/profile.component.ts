@@ -27,6 +27,7 @@ export class ProfileComponent implements OnInit {
     this.authService.logout();
   }
 
+  // Questo metodo elimina l'account dal db e libera il local storage
   eliminaAccount(userId:number) {
     this.authService.removeAccount(userId).subscribe(() => {
       console.log("Account eliminato", userId);

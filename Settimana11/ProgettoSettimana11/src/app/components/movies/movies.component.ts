@@ -20,9 +20,9 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit(): void {
     //Recupero metodo dal service per vedere a schermo i film
-    this.movieSrv.recuperaFilms().subscribe((favMovies: Movie[]) => {
-      this.movies = favMovies;
-      console.log(favMovies);
+    this.movieSrv.recuperaFilms().subscribe((movies: Movie[]) => {
+      this.movies = movies;
+      console.log(movies);
     });
 
     this.authSrv.user$.subscribe((utente) => {
@@ -76,7 +76,8 @@ rimuoviFavorite(film: Movie): void {
     console.log("film preferito eliminato con successo", film.id, film.title);
   }
 }
-//metodo per verificare se il film è tra i preferiti dell' utente
+
+//Metodo per verificare se il film e' tra i preferiti dell'utente
 isFavorite(film: Movie): boolean {
   return this.favorites.some((m) => m.movieId === film.id);
 }

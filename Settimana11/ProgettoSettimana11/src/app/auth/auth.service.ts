@@ -58,6 +58,20 @@ export class AuthService {
         }
     }
 
+    restore() {
+      const utenteLoggato = localStorage.getItem('user');
+      if (!utenteLoggato) {
+          return;
+      }
+
+      const datiUtente: AuthData = JSON.parse(utenteLoggato);
+      if (this.jwtHelper.isTokenExpired(datiUtente.accessToken)) {
+          return;
+      }
+      this.authSubj.next(datiUtente);
+      this.autoLogout(datiUtente);
+  }
+
     autoLogout(data: AuthData) {
         const expirationDate = this.jwtHelper.getTokenExpirationDate(
             data.accessToken
